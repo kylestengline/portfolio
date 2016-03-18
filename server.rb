@@ -12,7 +12,5 @@ module Portfolio
 		get "/contact" do
 			erb :contact
 		end
-
-
 	end
 end

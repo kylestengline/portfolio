@@ -2,12 +2,20 @@ body {
 	background-color: black;
 }
 
-h1 {
+h1, h2, h3, table {
 	color: white;
+	padding: 20px;
 }
 
-h2 {
-	color: white;
+th, tr {
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-left: 40px;
+	text-align: center;
+}
+
+#project_one {
+	background-color: white; 
 }
 
 a {
