@@ -1,24 +1,56 @@
 body {
-	background-color: black;
+	background-color: #222;
 }
 
-h1, h2, h3, table {
+h1, h2, h3 {
 	color: white;
 	padding: 20px;
 }
 
-th, tr {
-	padding-top: 40px;
-	padding-right: 40px;
-	padding-left: 40px;
+th, tr, td, table {
+	margin-top: 40px;
+	margin-right: 40px;
+	margin-left: 60px;
 	text-align: center;
+	background-color: white;
+	border: 2px solid black;
 }
 
-#project_one {
-	background-color: white; 
+th#project_one, td#project_one, th#project_two, td#project_two,
+th#project_three, td#project_three {
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: white;
 }
 
-a {
+th#project_one, th#project_two, th#project_three {
+	border: 2px solid black;
+	background-color: white;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+a#bio, a#contact {
 	color: white;
 	text-decoration: none;
+}
+
+/*need to get it to display inline. Currently displays as a list.*/
+div#one, div#two, div#three {
+	/*position: center;*/
+	float: left;
+	width: 33%;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 60px;
+	margin-bottom: 50px;
+	text-align: center;
+	background-color: white;
+	display: inline-block;
+/*	clear: left;
+*/}
+
+a {
+	text-decoration: none;
+	color: black;
 }
