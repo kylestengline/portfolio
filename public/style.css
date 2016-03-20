@@ -4,9 +4,14 @@ body {
 
 h1, h2, h3 {
 	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
-	font-size: 25px;
+	font-size: 35px;
 	color: white;
 	padding: 10px;
+}
+
+h1.name {
+	font-size: 65px;
+	animation: fadein 4s;
 }
 
 h4 {
@@ -17,7 +22,7 @@ h4 {
 
 h4.projects {
 	color: white;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 h5.contact {
@@ -26,14 +31,10 @@ h5.contact {
 	font-size: 25px;
 }
 
-h1.name {
-	font-size: 55px;
-	animation: fadein 4s;
-}
-
 a {
 	text-decoration: none;
 	color: black;
+	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
 }
 
 a#contact, a#work {
@@ -44,30 +45,30 @@ a#contact, a#work {
 a#bio {
 	text-decoration: none;
 	color: #3399ff;
-	animation: fadein 7s;
-
+	animation: fadein 10s;
 }
 
 a.project {
-	font-size: 18px;
+	font-size: 25px;
 }
 
 div#about {
-	background-color: #002699;
+	padding: 35px;
 }
 
-div#projects {
-	margin-right: 20px;
-}
+/*div#projects {
+	margin-right: 80px;
+	margin-left: 40px; 
+}*/
 
 #one, #two, #three {
+	float: left;
 	line-height: 1.5em;
   width: 25%;
   height: 370px;
   background-color: white;
-  /*margin-top: 20px;*/
-  margin-left: 20px;
-  margin-bottom: 50px;
+  margin-left: 75px;
+  margin-bottom: 70px;
   text-align: center;
   display: inline-block;
   border-radius: 20%;
@@ -75,28 +76,30 @@ div#projects {
 
 p {
 	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
-	font-size: 20px;
+	font-size: 25px;
 	padding: 10px;
 }
 
 p.contact {
 	color: white;
+	font-size: 25px;
 }
 
 a.email, a.linkedin, a.github {
 	color: white;
-	padding-top: 15px;
+	padding-top: 20px;
 	display: inline-block; 
 }
 
-p.languages {
+p.skills {
 	color: white;
-	background-color: #0066cc;
+	font-size: 30px;
+	/*background-color: #0066cc;*/
 }
 
-footer {
+/*footer#contact_me {
 	background-color: #3399ff;
-}
+}*/
 
 @keyframes fadein {
 	from { opacity: 0; }
