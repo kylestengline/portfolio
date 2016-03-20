@@ -3,54 +3,112 @@ body {
 }
 
 h1, h2, h3 {
+	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
+	font-size: 25px;
 	color: white;
-	padding: 20px;
-}
-
-th, tr, td, table {
-	margin-top: 40px;
-	margin-right: 40px;
-	margin-left: 60px;
-	text-align: center;
-	background-color: white;
-	border: 2px solid black;
-}
-
-th#project_one, td#project_one, th#project_two, td#project_two,
-th#project_three, td#project_three {
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: white;
-}
-
-th#project_one, th#project_two, th#project_three {
-	border: 2px solid black;
-	background-color: white;
 	padding: 10px;
-	border-radius: 50%;
 }
 
-a#bio, a#contact {
+h4 {
+	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
+	font-size: 25px;
+	padding: 10px;
+}
+
+h4.projects {
 	color: white;
-	text-decoration: none;
+	margin-bottom: 5px;
 }
 
-/*need to get it to display inline. Currently displays as a list.*/
-div#one, div#two, div#three {
-	/*position: center;*/
-	float: left;
-	width: 33%;
-	background-color: white;
-	margin-top: 20px;
-	margin-left: 60px;
-	margin-bottom: 50px;
-	text-align: center;
-	background-color: white;
-	display: inline-block;
-/*	clear: left;
-*/}
+h5.contact {
+	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
+	color: white;
+	font-size: 25px;
+}
+
+h1.name {
+	font-size: 55px;
+	animation: fadein 4s;
+}
 
 a {
 	text-decoration: none;
 	color: black;
 }
+
+a#contact, a#work {
+	color: white;
+	text-decoration: none;
+}
+
+a#bio {
+	text-decoration: none;
+	color: #3399ff;
+	animation: fadein 7s;
+
+}
+
+a.project {
+	font-size: 18px;
+}
+
+div#about {
+	background-color: #002699;
+}
+
+div#projects {
+	margin-right: 20px;
+}
+
+#one, #two, #three {
+	line-height: 1.5em;
+  width: 25%;
+  height: 370px;
+  background-color: white;
+  /*margin-top: 20px;*/
+  margin-left: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 20%;
+}
+
+p {
+	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
+	font-size: 20px;
+	padding: 10px;
+}
+
+p.contact {
+	color: white;
+}
+
+a.email, a.linkedin, a.github {
+	color: white;
+	padding-top: 15px;
+	display: inline-block; 
+}
+
+p.languages {
+	color: white;
+	background-color: #0066cc;
+}
+
+footer {
+	background-color: #3399ff;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1;	}
+}
+
+
+
+
+
+
+
+
+
+
