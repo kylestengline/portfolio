@@ -1,5 +1,5 @@
 body {
-	background-color: #222;
+	background-color: #444;
 }
 
 h1, h2, h3 {
@@ -12,7 +12,7 @@ h1, h2, h3 {
 h1.name {
 	font-size: 65px;
 	animation: fadein 4s;
-	margin-top: 60px;
+	margin-top: 10px;
 }
 
 h4 {
@@ -60,7 +60,11 @@ a.project {
 div#about {
 	padding-right: 50px;
 	padding-left: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 150px;
+}
+
+div#contact {
+	background-color: white;
 }
 
 #one, #two, #three {
@@ -76,7 +80,7 @@ div#about {
   border-radius: 20%;
 }
 
-#one {
+/*#one {
 	background-image: url(../img/simon.png);
 	background-size: 90px;
 	background-repeat: no-repeat;
@@ -95,7 +99,7 @@ div#about {
 	background-size: 300px;
 	background-repeat: no-repeat;
 	background-position: bottom;
-}
+}*/
 
 p {
 	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
@@ -104,23 +108,31 @@ p {
 }
 
 p.contact {
-	color: white;
+	/*color: white;*/
 	font-size: 25px;
 	margin-top: 700px;
 }
 
 a.email, a.linkedin, a.github {
-	color: white;
+	/*color: white;*/
 	padding-top: 20px;
 	display: inline-block; 
 }
 
-p.skills {
+a#back_to_top {
 	color: white;
+}
+
+.skills {
+	/*color: white;*/
 	font-size: 30px;
-	padding-bottom: 300px;
+	padding-bottom: 200px;
 	padding-top: 200px;
-	/*background-color: #0066cc;*/
+	background-color: white;
+}
+
+img {
+	border-radius: 50%;
 }
 
 /*footer#contact_me {
