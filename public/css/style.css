@@ -12,6 +12,7 @@ h1, h2, h3 {
 h1.name {
 	font-size: 65px;
 	animation: fadein 4s;
+	margin-top: 60px;
 }
 
 h4 {
@@ -23,6 +24,7 @@ h4 {
 h4.projects {
 	color: white;
 	margin-bottom: 10px;
+	margin-left: -10px;
 }
 
 h5.contact {
@@ -37,9 +39,12 @@ a {
 	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
 }
 
-a#contact, a#work {
+a#contact {
 	color: white;
 	text-decoration: none;
+	float: left;
+	clear: both;
+	margin-left: 550px;
 }
 
 a#bio {
@@ -53,25 +58,43 @@ a.project {
 }
 
 div#about {
-	padding: 35px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 50px;
 }
-
-/*div#projects {
-	margin-right: 80px;
-	margin-left: 40px; 
-}*/
 
 #one, #two, #three {
 	float: left;
 	line-height: 1.5em;
   width: 25%;
-  height: 370px;
+  height: 400px;
   background-color: white;
   margin-left: 75px;
   margin-bottom: 70px;
   text-align: center;
   display: inline-block;
   border-radius: 20%;
+}
+
+#one {
+	background-image: url(../img/simon.png);
+	background-size: 90px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#two {
+	background-image: url(../img/admintracker.png); 
+	background-size: 130px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#three {
+	background-image: url(../img/motivate.png); 
+	background-size: 300px;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 p {
@@ -83,6 +106,7 @@ p {
 p.contact {
 	color: white;
 	font-size: 25px;
+	margin-top: 700px;
 }
 
 a.email, a.linkedin, a.github {
