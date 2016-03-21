@@ -118,6 +118,8 @@ a.email, a.linkedin, a.github {
 p.skills {
 	color: white;
 	font-size: 30px;
+	padding-bottom: 300px;
+	padding-top: 200px;
 	/*background-color: #0066cc;*/
 }
 
