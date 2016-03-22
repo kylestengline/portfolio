@@ -12,7 +12,7 @@ h1, h2, h3 {
 h1.name {
 	font-size: 55px;
 	animation: fadein 4s;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
 h4 {
@@ -55,6 +55,31 @@ a#bio {
 	color: #3399ff;
 	animation: fadein 10s;
 }
+
+a#contact_me {
+	text-decoration: none;
+	color: #3399ff;
+	animation: fadein 10s;
+}
+
+a#my_projects {
+	text-decoration: none;
+	color: #3399ff;
+	animation: fadein 10s;
+}
+
+a#skills {
+	text-decoration: none;
+	color: #3399ff;
+	animation: fadein 10s;
+}
+
+a#my_projects_two {
+	text-decoration: none;
+	color: #3399ff;
+	animation: fadein 10s;
+}
+
 
 a.project {
 	font-size: 20px;
@@ -111,10 +136,10 @@ a#back_to_top {
 	color: #3399ff;
 }
 
-.skills {
+p.skills {
 	font-size: 25px;
-	padding-bottom: 200px;
-	padding-top: 200px;
+	padding-bottom: 250px;
+	padding-top: 250px;
 	background-color: white;
 }
 
@@ -200,7 +225,7 @@ img {
 		margin-top: 
 	}
 
-	.skills {
+	p.skills {
 		font-size: 35px;
 		padding-bottom: 200px;
 		padding-top: 200px;
@@ -280,7 +305,7 @@ img {
 		margin-top: 
 	}
 
-	.skills {
+	p.skills {
 		font-size: 35px;
 		padding-bottom: 200px;
 		padding-top: 200px;
