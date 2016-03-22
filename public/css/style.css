@@ -58,6 +58,11 @@ a#bio {
 
 a.project {
 	font-size: 25px;
+	color: #3399ff;
+}
+
+a.the_code {
+	color: #3399ff;
 }
 
 div#about {
