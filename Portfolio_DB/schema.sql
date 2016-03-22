@@ -1,9 +1,9 @@
--- DROP TABLE IF EXISTS contacts CASCADE;
+-- DROP TABLE contacts CASCADE;
 
 -- CREATE TABLE contacts (
 -- 	id SERIAL PRIMARY KEY,
--- 	fname VARCHAR (500) NOT NULL,
--- 	lname VARCHAR (500) NOT NULL,
--- 	email VARCHAR (500) NOT NULL,
--- 	message TEXT NOT NULL
+-- 	fname VARCHAR (500),
+-- 	lname VARCHAR (500),
+-- 	email VARCHAR (500),
+-- 	message TEXT
 -- );
