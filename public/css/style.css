@@ -3,21 +3,21 @@ body {
 }
 
 h1, h2, h3 {
-	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
-	font-size: 35px;
+	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
+	font-size: 25px;
 	color: white;
 	padding: 10px;
 }
 
 h1.name {
-	font-size: 65px;
+	font-size: 55px;
 	animation: fadein 4s;
 	margin-top: 10px;
 }
 
 h4 {
-	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
-	font-size: 25px;
+	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
+	font-size: 20px;
 	padding: 10px;
 }
 
@@ -30,15 +30,15 @@ h4.projects {
 }
 
 h5.contact {
-	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
+	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 a {
 	text-decoration: none;
 	color: black;
-	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
+	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
 }
 
 a#contact {
@@ -57,7 +57,7 @@ a#bio {
 }
 
 a.project {
-	font-size: 25px;
+	font-size: 20px;
 	color: #3399ff;
 }
 
@@ -90,14 +90,14 @@ div#contact {
 }
 
 p {
-	font-family: 'Josefin Slab', serif, sans-serif, Helvetica;
-	font-size: 25px;
+	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
+	font-size: 20px;
 	padding: 10px;
 }
 
 p.contact {
 	/*color: white;*/
-	font-size: 25px;
+	font-size: 20px;
 	margin-top: 700px;
 }
 
@@ -112,7 +112,7 @@ a#back_to_top {
 }
 
 .skills {
-	font-size: 30px;
+	font-size: 25px;
 	padding-bottom: 200px;
 	padding-top: 200px;
 	background-color: white;
@@ -148,15 +148,16 @@ img {
 	}
 
 	h1.name {
-		margin-top: 65px;
+		margin-top: 18px;
 	}
 
 	h3 {
-		font-size: 43px;
+		font-size: 38px;
+		line-height: 1.2em;
 	}
 
 	h4 {
-		font-size: 50px;
+		font-size: 45px;
 		padding: 10px;
 	}
 
@@ -164,7 +165,7 @@ img {
 	 color: white;
 	 margin-bottom: 20px;
 	 margin-top: 460px;
-	 font-size: 50px;
+	 font-size: 45px;
 	}
 
 	img {
@@ -173,22 +174,22 @@ img {
 	}
 
 	p {
-		font-size: 43px;
+		font-size: 38px;
 		line-height: 1.2em;
 		padding: 20px;
 	}
 
 	p.contact {
-		font-size: 50px;
+		font-size: 45px;
 	}
 
 	a#contact {
 		margin-left: 200px;
-    font-size: 50px;
+    font-size: 45px;
 	}
 
 	a.project {
-		font-size: 43px;
+		font-size: 38px;
 	}
 
 	div#contact {
@@ -200,12 +201,12 @@ img {
 	}
 
 	.skills {
-		font-size: 40px;
+		font-size: 35px;
 		padding-bottom: 200px;
 		padding-top: 200px;
 		background-color: #444;
 		color: white;
-		line-height: 1.3em;
+		line-height: 1.5em;
 		padding-right: 25px;
 		margin-top: 240px;
 	}
@@ -215,7 +216,7 @@ img {
 /*iPhone 6*/
 @media screen and (max-width: 800px) {
 
-	#one, #two, #three {
+		#one, #two, #three {
 		line-height: 1.5em;
     width: 70%;
     height: 690px;
@@ -227,15 +228,16 @@ img {
 	}
 
 	h1.name {
-		margin-top: 65px;
+		margin-top: 18px;
 	}
 
 	h3 {
-		font-size: 43px;
+		font-size: 38px;
+		line-height: 1.2em;
 	}
 
 	h4 {
-		font-size: 50px;
+		font-size: 45px;
 		padding: 10px;
 	}
 
@@ -243,7 +245,7 @@ img {
 	 color: white;
 	 margin-bottom: 20px;
 	 margin-top: 460px;
-	 font-size: 50px;
+	 font-size: 45px;
 	}
 
 	img {
@@ -252,22 +254,22 @@ img {
 	}
 
 	p {
-		font-size: 43px;
+		font-size: 38px;
 		line-height: 1.2em;
 		padding: 20px;
 	}
 
 	p.contact {
-		font-size: 50px;
+		font-size: 45px;
 	}
 
 	a#contact {
 		margin-left: 200px;
-    font-size: 50px;
+    font-size: 45px;
 	}
 
 	a.project {
-		font-size: 43px;
+		font-size: 38px;
 	}
 
 	div#contact {
@@ -279,12 +281,12 @@ img {
 	}
 
 	.skills {
-		font-size: 40px;
+		font-size: 35px;
 		padding-bottom: 200px;
 		padding-top: 200px;
 		background-color: #444;
 		color: white;
-		line-height: 1.3em;
+		line-height: 1.5em;
 		padding-right: 25px;
 		margin-top: 240px;
 	}
