@@ -153,7 +153,19 @@ img {
 	max-width: 100%;
 }
 
-#ball_one {
+img#contact_back {
+	border-radius: 0%;
+	max-width: 100%;
+	border: 2px solid black;
+	margin-top: 200px;
+	margin-right: 135px;
+	margin-left: 140px;
+}
+
+/*########################################*/
+/*Solar System type thing goes here*/
+/*########################################*/
+/*#ball_one {
 	margin: 0 auto;
 	margin-top: 550px;
 	padding-top: 100px;
@@ -161,7 +173,6 @@ img {
 	width: 8%;
 	height: 4%;
 	background-color: white;
-	/*animation: spin-right 3s linear infinite;*/
 }
 
 #ball_two {
@@ -178,7 +189,7 @@ img {
 	100% {
 		transform: rotate(360deg);
 	}
-}
+}*/
 
 
 
@@ -232,6 +243,16 @@ img {
 		margin-right: 20px;
 	}
 
+	img#contact_back {
+		border-radius: 0%;
+		max-width: 100%;
+		border: 2px solid black;
+		margin-top: 600px;
+		margin-bottom: 200px;
+		margin-right: 135px;
+		margin-left: 140px;
+	}
+
 	p {
 		font-size: 38px;
 		line-height: 1.2em;
@@ -251,13 +272,10 @@ img {
 		font-size: 38px;
 	}
 
-	div#contact {
+	/*div#contact {
 		margin-top: 3200px;
-	}
+	}*/
 
-	div#languages {
-		margin-top: 
-	}
 
 	p.skills {
 		font-size: 35px;
@@ -312,6 +330,16 @@ img {
 		margin-right: 20px;
 	}
 
+	img#contact_back {
+		border-radius: 0%;
+		max-width: 100%;
+		border: 2px solid black;
+		margin-top: 600px;
+		margin-bottom: 200px;
+		margin-right: 135px;
+		margin-left: 140px;
+	}
+
 	p {
 		font-size: 38px;
 		line-height: 1.2em;
@@ -332,7 +360,7 @@ img {
 	}
 
 	div#contact {
-		margin-top: 3200px;
+		/*margin-top: 3200px;*/
 	}
 
 	div#languages {
