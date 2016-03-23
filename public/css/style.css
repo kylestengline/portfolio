@@ -7,6 +7,7 @@ h1, h2, h3 {
 	font-size: 25px;
 	color: white;
 	padding: 10px;
+	line-height: 1.2em;
 }
 
 h1.name {
@@ -142,6 +143,7 @@ a#back_to_top {
 }
 
 p.skills {
+	line-height: 1.2em;
 	font-size: 25px;
 	padding-bottom: 250px;
 	padding-top: 250px;
