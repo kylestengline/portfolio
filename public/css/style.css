@@ -25,6 +25,7 @@ h4 {
 }
 
 h4.projects {
+	font-size: 25px;
 	color: white;
 	margin-bottom: 10px;
 	margin-left: -10px;
@@ -44,43 +45,45 @@ a {
 	color: black;
 	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
 	font-weight: normal;	
+	-webkit-transition: all 1s;
+}
+
+a:hover {
+	text-decoration: underline;
+	-webkit-transition: all 1s;
 }
 
 a#contact {
 	color: white;
-	text-decoration: none;
+	font-size: 25px;
 	float: left;
 	clear: both;
 	color: #3399ff;
-	margin-left: 535px;
+	margin-left: 550px;
 }
 
 a#bio {
-	text-decoration: none;
 	color: #3399ff;
 	animation: fadein 10s;
 }
 
 a#contact_me {
-	text-decoration: none;
 	color: #3399ff;
 	animation: fadein 10s;
 }
 
 a#my_projects {
-	text-decoration: none;
 	color: #3399ff;
 	animation: fadein 10s;
 }
 
 a#skills {
-	text-decoration: none;
 	color: #3399ff;
 	animation: fadein 10s;
 }
 
 a#my_projects_two {
-	text-decoration: none;
+	font-size: 25px;
 	color: #3399ff;
 	animation: fadein 10s;
 }
@@ -163,7 +166,7 @@ img#contact_back {
 	border-radius: 0%;
 	max-width: 100%;
 	border: 2px solid black;
-	margin-top: 200px;
+	margin-top: 400px;
 	margin-right: 135px;
 	margin-left: 140px;
 }
@@ -358,7 +361,7 @@ img#contact_back {
 	}
 
 	a#contact {
-		margin-left: 200px;
+		margin-left: 210px;
     font-size: 45px;
 	}
 
