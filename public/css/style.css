@@ -14,7 +14,7 @@ h1, h2, h3 {
 h1.name {
 	font-size: 55px;
 	animation: fadein 4s;
-	margin-top: 30px;
+	margin-top: 7px;
 }
 
 h4 {
@@ -28,9 +28,8 @@ h4.projects {
 	font-size: 25px;
 	color: white;
 	margin-bottom: 10px;
-	margin-left: -10px;
+	margin-left: -15px;
 	margin-top: 100px;
-
 }
 
 h5.contact {
@@ -53,6 +52,7 @@ a:hover {
 	-webkit-transition: all 1s;
 }
 
+/*Won't center on smaller screens*/
 a#contact {
 	color: white;
 	font-size: 25px;
@@ -60,6 +60,7 @@ a#contact {
 	clear: both;
 	color: #3399ff;
 	margin-left: 550px;
+	text-align: center;
 }
 
 a#bio {
@@ -108,7 +109,6 @@ div#contact {
 	background-color: white;
 	/*margin-top: 1000px;*/
 	margin-top: 100px;
-
 }
 
 #one, #two, #three {
@@ -141,8 +141,8 @@ p.contact {
 a.email, a.linkedin, a.github {
 	padding-top: 20px;
 	display: inline-block;
-	padding-left: 10px;
-	padding-right: 10px; 
+	padding-left: 5px;
+	padding-right: 5px; 
 }
 
 a#back_to_top {
@@ -281,11 +281,6 @@ img#contact_back {
 		font-size: 38px;
 	}
 
-	/*div#contact {
-		margin-top: 3200px;
-	}*/
-
-
 	p.skills {
 		font-size: 35px;
 		padding-bottom: 200px;
@@ -369,9 +364,13 @@ img#contact_back {
 		font-size: 38px;
 	}
 
-	div#contact {
-		/*margin-top: 3200px;*/
-	}
+	a#my_projects_two {
+	font-size: 30px;
+}
+
+	/*div#contact {
+		margin-top: 3200px;
+	}*/
 
 	div#languages {
 		margin-top: 
