@@ -149,13 +149,15 @@ img {
 }
 
 img.email {
+	border-radius: 0%;
 	height: 70px;
 	width: 70px;
 	}
 
 img.github, .linkedin {
-	height: 80px;
-	width: 80px;
+	border-radius: 0%;
+	height: 75px;
+	width: 75px;
 	}
 
 img#contact_back {
