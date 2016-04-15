@@ -85,8 +85,19 @@ a#my_projects_two:hover {
 	color: #ff0000;
 }
 
-a.project {
+a.project, .the_code {
 	font-size: 20px;
+	color: #ff0000;
+}
+
+a.project:hover {
+	-webkit-transition: all 1s;
+	color: #3B91E8;
+}
+
+a.the_code:hover {
+	-webkit-transition: all 1s;
+	color: #3B91E8;
 }
 
 a.email, a.linkedin, a.github {
@@ -112,7 +123,6 @@ div#languages {
 
 div#contact {
 	background-color: white;
-	/*margin-top: 1000px;*/
 	margin-top: 100px;
 }
 
@@ -127,6 +137,21 @@ div#contact {
   text-align: center;
   display: inline-block;
   border-radius: 10%;
+}
+
+div#one {
+	background: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.65)), url(/img/simon.png);
+	background-position: center;
+}
+
+div#two {
+	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url(/img/admintracker.png);
+	background-position: center;
+}
+
+div#three {
+	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.99)), url(/img/motivate.png);
+	background-position: center;
 }
 
 p {
