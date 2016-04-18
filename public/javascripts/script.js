@@ -3,6 +3,11 @@
 $(document).ready(function() {
 	$(this).scrollTop(0);
 // bio fades in after name appears
+	// $('.name').hide();
+	// setTimeout(function(){
+ //   	$('.name').show();
+ //  }, 1000)
+
 		$('.bio').hide();
 	setTimeout(function(){
     $('.bio').show();

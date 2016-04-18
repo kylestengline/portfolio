@@ -14,6 +14,7 @@ h1, h2, h3 {
 h1.name {
 	font-size: 55px;
 	margin-top: 7px;
+	/*messes up scrolling on mobile. Try something with scrollTop in jquery*/
 /*	animation-duration: 2s;
 	animation-name: slidein;
 */}
