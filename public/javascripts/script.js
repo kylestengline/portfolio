@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function() {
-	$('html, body').scrollTop(0);
+	$(this).scrollTop(0);
 // bio fades in after name appears
 		$('.bio').hide();
 	setTimeout(function(){
