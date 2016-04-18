@@ -3,11 +3,10 @@
 $(document).ready(function() {
 
 // bio fades in after name appears
-// messes up the other divs on mobile.
-	// 	$('.bio').hide();
-	// setTimeout(function(){
- //    $('.bio').show();
- //  }, 2000)
+		$('.bio').hide();
+	setTimeout(function(){
+    $('.bio').show();
+  }, 2000)
 
 // function to scroll to the skills area
 // will not scroll until clicked
