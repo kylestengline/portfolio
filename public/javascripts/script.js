@@ -2,6 +2,11 @@
 
 $(document).ready(function() {
 
+// bio fades in after name appears
+		$('.bio').hide();
+	setTimeout(function(){
+    $('.bio').show();
+  }, 2000)
 
 // function to scroll to the skills area
 // will not scroll until clicked
@@ -40,7 +45,7 @@ var	scrollToSkills = function(skills) {
 		var contact = $("a[name=" +contact+"]");
 		$('html,body').animate({scrollTop: contact.offset().top},1500);
 }
-
+		
 	$("#contact_me").click(function() {
 		scrollToContact('Contact');
 			return false;
@@ -62,7 +67,6 @@ var	scrollToSkills = function(skills) {
 		scrollToTop('top');
 			return false;
 	})
-
 });
 
 

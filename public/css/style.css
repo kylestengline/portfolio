@@ -13,8 +13,13 @@ h1, h2, h3 {
 
 h1.name {
 	font-size: 55px;
-	animation: fadein 4s;
 	margin-top: 7px;
+	animation-duration: 2s;
+	animation-name: slidein;
+}
+
+h3.bio {
+	animation: fadein 2s;
 }
 
 h4 {
@@ -45,7 +50,7 @@ a {
 	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
 	font-weight: normal;	
 	-webkit-transition: all 1s;
-	animation: fadein 10s;
+	animation: fadein 5s;
 }
 
 a:hover {
@@ -62,13 +67,10 @@ a#contact {
 }
 
 a#contact:hover {
+	cursor: pointer;
 	-webkit-transition: all 1s;
 	color: #ff0000;
 }
-
-/*a#bio {
-	animation: fadein 10s;
-}*/
 
 a#contact_me, #my_projects, #skills {
 	padding: 35px;
@@ -76,7 +78,7 @@ a#contact_me, #my_projects, #skills {
 
 a#my_projects_two {
 	font-size: 25px;
-	animation: fadein 10s;
+	animation: fadein 5s;
 	color: #F4FF77;
 }
 
@@ -111,7 +113,7 @@ a.email, a.linkedin, a.github {
 div#about {
 	padding-right: 200px;
   padding-left: 200px;
-	padding-bottom: 150px;
+	padding-bottom: 200px;
 }
 
 div#languages {
@@ -140,18 +142,22 @@ div#contact {
 }
 
 div#one {
-	background: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.65)), url(/img/simon.png);
+	background: linear-gradient(rgba(255, 255, 255, 0.87), 
+		rgba(255, 255, 255, 0.65)), url(/img/simon.png);
 	background-position: center;
 }
 
 div#two {
-	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url(/img/admintracker.png);
+	background: linear-gradient(rgba(255, 255, 255, 0.8), 
+		rgba(255, 255, 255, 0.7)), url(/img/admintracker.png);
 	background-position: center;
 }
 
 div#three {
-	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.99)), url(/img/motivate.png);
+	background: linear-gradient(rgba(255, 255, 255, 0.4), 
+		rgba(255, 255, 255, 0.99)), url(/img/motivate.png);
 	background-position: center;
+	background-image: cover;
 }
 
 p {
@@ -209,6 +215,18 @@ img#simon, #admintracker, #motivate {
 	border: none;
 }
 
+@keyframes slidein {
+	from {
+		margin-left: 150%;
+		width: 100%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 60%;
+	}
+}
+
 @keyframes fadein {
 	from { opacity: 0; }
 	to { opacity: 1;	}
@@ -249,115 +267,6 @@ img#simon, #admintracker, #motivate {
 /*MEDIA QUERIES!!!!!*/
 /*###################################################*/
 
-/*iPhone 5*/
-@media screen and (max-width: 700px) {
-
-	#one, #two, #three {
-		line-height: 1.5em;
-    width: 70%;
-    height: 690px;
-    background-color: white;
-    margin-bottom: 70px;
-    text-align: center;
-    border-radius: 10%;
-    margin-left: 105px;
-	}
-
-	div#languages {
-		background-color: rgba(99, 146, 255, 0.85);
-    padding-bottom: 350px;
-    padding-top: 180px;
-    margin-top: 300px;
-	}
-
-	div#about {
-		padding-right: 50px;
-  	padding-left: 50px;
-	}
-
-	h1.name {
-		margin-top: 18px;
-	}
-
-	h3 {
-		font-size: 38px;
-		line-height: 1.2em;
-	}
-
-	h4 {
-		font-size: 45px;
-		padding: 10px;
-	}
-
-	h4.projects {
-	 color: white;
-	 margin-bottom: 20px;
-	 margin-top: 460px;
-	 font-size: 45px;
-	}
-
-	img {
-		max-width: 100%;
-		margin-right: 20px;
-	}
-
-	img#contact_back {
-		border-radius: 0%;
-		max-width: 100%;
-		border: 2px solid black;
-		margin-top: 600px;
-		margin-bottom: 200px;
-		margin-right: 135px;
-		margin-left: 140px;
-	}
-
-	img.email {
-		height: 120px;
-		width: 120px;
-	}
-
-	img.github, .linkedin {
-		height: 130px;
-		width: 130px;
-	}
-
-	p {
-		font-size: 38px;
-		font-weight: 300;
-		line-height: 1.2em;
-		padding: 20px;
-	}
-
-	p.contact {
-		font-size: 45px;
-	}
-
-	a#contact {
-		margin: 0 auto;
-    font-size: 45px;
-	}
-
-	a.project {
-		font-size: 38px;
-	}
-
-	a#contact_me, #my_projects, #skills {
-	padding: 15px;
-}
-
-	p.skills {
-		font-size: 35px;
-		padding-bottom: 0px;
-		padding-top: 0px;
-		color: black;
-		background-color: #5981DE;
-		line-height: 1.5em;
-		padding-right: 25px;
-		margin-top: 150px;
-	}
-}
-
-
 /*iPhone 6*/
 @media screen and (max-width: 800px) {
 
@@ -374,9 +283,9 @@ img#simon, #admintracker, #motivate {
 
 	div#languages {
 		background-color: rgba(99, 146, 255, 0.85);
-    padding-bottom: 350px;
+    padding-bottom: 450px;
     padding-top: 180px;
-    margin-top: 300px;
+    margin-top: 650px;
 	}
 
 	div#about {
@@ -386,6 +295,7 @@ img#simon, #admintracker, #motivate {
 
 	h1.name {
 		margin-top: 18px;
+		font-size: 60px;
 	}
 
 	h3 {
@@ -450,7 +360,7 @@ img#simon, #admintracker, #motivate {
 		padding: 15px;
 }
 
-	a.project {
+	a.project, .the_code {
 		font-size: 38px;
 	}
 
@@ -470,6 +380,118 @@ img#simon, #admintracker, #motivate {
 	}
 }
 
+
+
+
+/*iPhone 5*/
+@media screen and (max-width: 700px) {
+
+	#one, #two, #three {
+		line-height: 1.5em;
+    width: 70%;
+    height: 690px;
+    background-color: white;
+    margin-bottom: 70px;
+    text-align: center;
+    border-radius: 10%;
+    margin-left: 105px;
+		background-image: none;
+	}
+
+	div#languages {
+		background-color: rgba(99, 146, 255, 0.85);
+    padding-bottom: 350px;
+    padding-top: 180px;
+    margin-top: 650px;
+	}
+
+	div#about {
+		padding-right: 50px;
+  	padding-left: 50px;
+	}
+
+	h1.name {
+		margin-top: 18px;
+		font-size: 60px;
+	}
+
+	h3 {
+		font-size: 38px;
+		line-height: 1.2em;
+	}
+
+	h4 {
+		font-size: 45px;
+		padding: 10px;
+	}
+
+	h4.projects {
+	 color: white;
+	 margin-bottom: 20px;
+	 margin-top: 460px;
+	 font-size: 45px;
+	}
+
+	img {
+		max-width: 100%;
+		margin-right: 20px;
+	}
+
+	img#contact_back {
+		border-radius: 0%;
+		max-width: 100%;
+		border: 2px solid black;
+		margin-top: 600px;
+		margin-bottom: 200px;
+		margin-right: 135px;
+		margin-left: 140px;
+	}
+
+	img.email {
+		height: 120px;
+		width: 120px;
+	}
+
+	img.github, .linkedin {
+		height: 130px;
+		width: 130px;
+	}
+
+	p {
+		font-size: 38px;
+		font-weight: 300;
+		line-height: 1.2em;
+		padding: 20px;
+	}
+
+	p.contact {
+		font-size: 45px;
+	}
+
+	a#contact {
+		margin: 0 auto;
+    font-size: 45px;
+	}
+
+	a.project, .the_code {
+		font-size: 38px;
+	}
+
+	a#contact_me, #my_projects, #skills {
+	padding: 15px;
+}
+
+	p.skills {
+		font-size: 35px;
+		padding-bottom: 0px;
+		padding-top: 0px;
+		color: black;
+		background-color: #5981DE;
+		line-height: 1.5em;
+		padding-right: 25px;
+		margin-top: 150px;
+	}
+}
 
 
 
