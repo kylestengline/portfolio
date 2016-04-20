@@ -201,12 +201,16 @@ img#simon, #admintracker, #motivate {
 	border-radius: 0%;
 	border: none;
 	margin-top: 5%;
+	height: 33%;
+  width: 90%;
 }
 
-img#simon {
-	border-radius: 10%;
+/*switched images, so don't need this anymore*/
+/*img#simon {
+	height: 32%;
+  width: 90%;
 }
-
+*/
 @keyframes slideInSmooth {
 	from {
 		margin-left: 100%;
@@ -271,8 +275,13 @@ img#simon {
 	    margin-left: 105px;
 	}
 
+	div#two {
+		height: 820px;
+	}
+
 	img#simon, #admintracker, #motivate {
-		position: center;		
+		padding-top: 5%;
+		margin: 0 auto;	
 	}
 
 	div#languages {
@@ -387,6 +396,15 @@ img#simon {
     margin-bottom: 70px;
     text-align: center;
     margin-left: 105px;
+	}
+
+	div#two {
+		height: 820px;
+	}
+
+	img#simon, #admintracker, #motivate {
+		padding-top: 5%;
+		margin: 0 auto;	
 	}
 
 	div#languages {
