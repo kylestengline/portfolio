@@ -3,6 +3,8 @@
 $(document).ready(function() {
 	$(this).scrollTop(0);
 
+	$('.loading').fadeOut('slow');
+
 		$('.bio').hide();
 	setTimeout(function(){
     $('.bio').show();
