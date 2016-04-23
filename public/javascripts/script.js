@@ -2,6 +2,9 @@
 
 $(document).ready(function() {
 
+// isn't working on page load
+	$('.loading').fadeOut('slow');
+	
 	// $(this).scrollTop(0);
 		
 		$('.bio').hide();
