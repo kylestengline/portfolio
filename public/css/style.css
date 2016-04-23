@@ -3,12 +3,12 @@ body {
 }
 
 .loading {
-	position: fixed;
-	margin: 0 auto;
+/*	position: fixed;
+*/	margin: 0 auto;
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('img/yinyang_loading.gif') 50% 50% no-repeat;
+	background: url('img/yinyang_loading.gif') rgb(250, 250, 250);
 }
 
 h1, h2, h3 {

@@ -1,10 +1,9 @@
 "use strict";
 
 $(document).ready(function() {
-	$(this).scrollTop(0);
 
-	$('.loading').fadeOut('slow');
-
+	// $(this).scrollTop(0);
+		
 		$('.bio').hide();
 	setTimeout(function(){
     $('.bio').show();
