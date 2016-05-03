@@ -288,6 +288,11 @@ img#simon, #admintracker, #motivate {
 	    margin-left: 105px;
 	}
 
+	.container {
+		overflow: hidden;
+		padding-left: 20px;
+	}
+
 	div#two {
 		height: 820px;
 	}
@@ -409,6 +414,11 @@ img#simon, #admintracker, #motivate {
     margin-bottom: 70px;
     text-align: center;
     margin-left: 105px;
+	}
+
+	.container {
+		overflow: hidden;
+		padding-left: 20px;
 	}
 
 	div#two {
