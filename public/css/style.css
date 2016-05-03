@@ -30,7 +30,6 @@ h1.name {
 
 .container {
 	overflow: hidden;
-	/*messes up scrolling on mobile. Try something with scrollTop in jquery*/
 }
 
 img#me {
@@ -227,7 +226,7 @@ img#simon, #admintracker, #motivate {
 @keyframes slideInSmooth {
 	from {
 		margin-left: 100%;
-		width: 300%;
+		width: 200%;
 	}
 
 	to {
