@@ -3,10 +3,16 @@
 $(document).ready(function() {
 
 // isn't working on page load
-	$('.loading').fadeOut('slow');
+	// $('.loading').fadeOut('slow');
 	
 	// $(this).scrollTop(0);
-		
+
+	// Moves up divs below the image and makes site not look good.
+	// 	$('#me').hide();
+	// setTimeout(function() {
+	// 	$('#me').fadeIn(4000);
+	// }, 2000);
+
 		$('.bio').hide();
 	setTimeout(function(){
     $('.bio').show();

@@ -24,13 +24,14 @@ h1.name {
 	font-size: 55px;
 	margin-top: 7px;
 	color: #F19051;
+	overflow: hidden;
 	/*messes up scrolling on mobile. Try something with scrollTop in jquery*/
-	/*animation-duration: 2s;
-	animation-name: slideInSmooth;*/
+	animation-duration: 2s;
+	animation-name: slideInSmooth;
 }
 
 img#me {
-	animation: fadein 4.5s;
+	/*animation: fadein 4.5s;*/
 }
 
 h3.bio {
@@ -223,7 +224,7 @@ img#simon, #admintracker, #motivate {
 @keyframes slideInSmooth {
 	from {
 		margin-left: 100%;
-		width: 100%;
+		width: 300%;
 	}
 
 	to {
