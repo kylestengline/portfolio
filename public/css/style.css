@@ -24,13 +24,13 @@ h1.name {
 	font-size: 55px;
 	margin-top: 7px;
 	color: #F19051;
+	animation-duration: 2s;
+	animation-name: slideInSmooth;
 }
 
 .container {
 	overflow: hidden;
 	/*messes up scrolling on mobile. Try something with scrollTop in jquery*/
-	animation-duration: 2s;
-	animation-name: slideInSmooth;
 }
 
 img#me {
