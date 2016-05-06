@@ -210,7 +210,7 @@ img#contact_back {
 }
 
 img#simon, #admintracker, #motivate {
-	border-radius: 3% 3% 0% 0% ;
+	border-radius: 3% 3% 0% 0%;
 	border: none;
 	margin-top: 5%;
 	height: 33%;
@@ -226,12 +226,12 @@ img#simon, #admintracker, #motivate {
 @keyframes slideInSmooth {
 	from {
 		margin-left: 100%;
-		width: 200%;
+		width: 300%;
 	}
 
 	to {
 		margin-left: 0%;
-		width: 50%;
+		width: 90%;
 	}
 }
 
@@ -296,11 +296,6 @@ img#simon, #admintracker, #motivate {
 		height: 820px;
 	}
 
-	img#simon, #admintracker, #motivate {
-		padding-top: 5%;
-		margin: 0 auto;	
-	}
-
 	div#languages {
 		background-color: rgba(99, 146, 255, 0.85);
     padding-bottom: 500px;
@@ -348,6 +343,13 @@ img#simon, #admintracker, #motivate {
 		margin-bottom: 200px;
 		margin-right: 135px;
 		margin-left: 140px;
+	}
+
+	img#simon, #admintracker, #motivate {
+		padding-top: 5%;
+		margin: 0 auto;	
+		border-radius: 3% 3% 0% 0%;
+
 	}
 
 	img.email {
@@ -426,7 +428,7 @@ img#simon, #admintracker, #motivate {
 
 	img#simon, #admintracker, #motivate {
 		padding-top: 5%;
-		margin: 0 auto;	
+		margin: 0 auto;
 	}
 
 	div#languages {
