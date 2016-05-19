@@ -1,5 +1,10 @@
 body {
 	background-color: #222;
+	background: linear-gradient(
+     rgba(255, 255, 255, 0.5), 
+     rgba(255, 255, 255, 0.5)
+   	), url(/img/skylineNYC.JPG);
+	)
 }
 
 .loading {
