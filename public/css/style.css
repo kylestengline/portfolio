@@ -321,7 +321,7 @@ img#simon, #admintracker, #motivate {
 	}
 
 	div#languages {
-		background: url()
+		background: url();
 		background-color: rgba(99, 146, 255, 0.85);
     padding-bottom: 500px;
     padding-top: 180px;
