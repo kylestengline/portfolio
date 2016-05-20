@@ -16,7 +16,7 @@ $(document).ready(function() {
 		$('.bio').hide();
 	setTimeout(function(){
     $('.bio').show();
-  }, 2000)
+  }, 1200)
 
 // function to scroll to the skills area
 // will not scroll until clicked

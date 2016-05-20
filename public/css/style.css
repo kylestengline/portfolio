@@ -1,13 +1,16 @@
 html { 
-  background: url(/img/skylineNYC.JPG) no-repeat center center fixed;
+  background: linear-gradient(
+		rgba(0, 0, 0, 0.65),
+		rgba(0, 0, 0, 0.65)
+		), url(/img/skylineNYC.JPG) no-repeat center center fixed;
   background-size: cover;
 }
 
-body {
-	background: rgba(0, 0, 0, 0.6);
+/*body {
+	background: rgba(0, 0, 0, 0.7);
 	background-size: cover;
 }
-
+*/
 /*.loading {
 	position: fixed;
 	margin: 0 auto;
@@ -51,6 +54,7 @@ h4 {
 	font-weight: 500;
 	font-size: 20px;
 	padding: 10px;
+	font-weight: 100;
 }
 
 h4.projects {
@@ -72,7 +76,7 @@ a {
 	text-decoration: none;
 	color: #6FA5DC;
 	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
-	font-weight: normal;	
+	font-weight: 100;	
 	-webkit-transition: all 1s;
 	animation: fadein 5s;
 }
@@ -145,7 +149,6 @@ div#about {
 }
 
 div#languages {
-	/*change the image background to the laptop image and adjust accordingly*/
 	background: linear-gradient(
 		rgba(255, 255, 255, 0.7),
 		rgba(255, 255, 255, 0.7)
@@ -189,14 +192,12 @@ p.contact {
 p.skills {
 	line-height: 1.2em;
 	font-size: 30px;
-/*	color: white;
-*/}
+}
 
 p.client, .server {
 	color: black;
 	margin: 0 auto;
 	font-size: 25px;
-	/*color: white;*/
 }
 
 img {
@@ -320,6 +321,7 @@ img#simon, #admintracker, #motivate {
 	}
 
 	div#languages {
+		background: url()
 		background-color: rgba(99, 146, 255, 0.85);
     padding-bottom: 500px;
     padding-top: 180px;
@@ -418,7 +420,7 @@ img#simon, #admintracker, #motivate {
 		padding-bottom: 0px;
 		padding-top: 0px;
 		color: black;
-		background-color: #5981DE;
+		/*background-color: rgba(99, 146, 255, 0.85);*/
 		line-height: 1.5em;
 		padding-right: 25px;
 		margin-top: 150px;
@@ -455,7 +457,7 @@ img#simon, #admintracker, #motivate {
 	}
 
 	div#languages {
-		background-color: rgba(99, 146, 255, 0.85);
+		background: rgba(99, 146, 255, 0.7);
     padding-bottom: 500px;
     padding-top: 180px;
     margin-top: 650px;
@@ -534,15 +536,15 @@ img#simon, #admintracker, #motivate {
 	}
 
 	a#contact_me, #my_projects, #skills {
-	padding: 15px;
-}
+		padding: 15px;
+	}
 
 	p.skills {
 		font-size: 35px;
 		padding-bottom: 0px;
 		padding-top: 0px;
 		color: black;
-		background-color: #5981DE;
+		/*background-color: #5981DE;*/
 		line-height: 1.5em;
 		padding-right: 25px;
 		margin-top: 150px;
