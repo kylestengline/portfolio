@@ -152,8 +152,8 @@ div#languages {
 	background: linear-gradient(
 		rgba(255, 255, 255, 0.7),
 		rgba(255, 255, 255, 0.7)
-		), url(/img/nycity.jpg) center no-repeat;
-	background-color: rgba(99, 146, 255, 0.75);
+		), url(/img/nycity.jpg);
+	/*background-color: rgba(99, 146, 255, 0.75);*/
 	padding-bottom: 250px;
 	padding-top: 150px;
 	margin-top: 150px;
