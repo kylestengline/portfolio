@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.6);
 	background-size: cover;
 }
 
@@ -146,7 +146,10 @@ div#about {
 
 div#languages {
 	/*change the image background to the laptop image and adjust accordingly*/
-	background: url(/img/nyc.jpg) center no-repeat;
+	background: linear-gradient(
+		rgba(255, 255, 255, 0.7),
+		rgba(255, 255, 255, 0.7)
+		), url(/img/nycity.jpg) center no-repeat;
 	background-color: rgba(99, 146, 255, 0.75);
 	padding-bottom: 250px;
 	padding-top: 150px;
@@ -173,7 +176,7 @@ div#contact {
 
 p {
 	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
-	font-weight: normal;	
+	font-weight: 100;	
 	font-size: 20px;
 	padding: 10px;
 }
@@ -186,12 +189,14 @@ p.contact {
 p.skills {
 	line-height: 1.2em;
 	font-size: 30px;
-}
+/*	color: white;
+*/}
 
 p.client, .server {
 	color: black;
 	margin: 0 auto;
 	font-size: 25px;
+	/*color: white;*/
 }
 
 img {
