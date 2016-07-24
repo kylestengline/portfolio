@@ -13,6 +13,25 @@ $(document).ready(function() {
 	// 	$('#me').fadeIn(4000);
 	// }, 2000);
 
+//  var fadeInClient = $(".client");
+//  var fadeInServer = $(".server");
+//    fadeInClient.hide();
+//    fadeInServer.hide();
+
+// scroll animation
+    var showDiv = $("#hideThenShow");
+    var pos = showDiv.position();
+
+    $(window).scroll(function() {
+      var windowPos = $(window).scrollTop();
+      if (windowPos >= (pos.top - 100)) {
+        showDiv.addClass("afterScroll");
+      } else {
+        showDiv.removeClass("afterScroll");
+      }
+    });
+    // scroll animation end
+
 		$('.bio').hide();
 	setTimeout(function(){
     $('.bio').show();
@@ -24,9 +43,11 @@ var	scrollToSkills = function(skills) {
 	var skill = $("a[name=" +skills+ "]");
 	$('html,body').animate({scrollTop: skill.offset().top},1500);
 }
-
+    
 	$("#skills").click(function() {
 		scrollToSkills('skills');
+//    fadeInClient.fadeIn(4500);
+//    fadeInServer.fadeIn(4500);
 		// makes scroll go smooth when we return false
 			return false;
 

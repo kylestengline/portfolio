@@ -2,7 +2,7 @@ html {
   background: linear-gradient(
 		rgba(0, 0, 0, 0.65),
 		rgba(0, 0, 0, 0.65)
-		), url(/img/skylineNYC.JPG) no-repeat center center fixed;
+		), url(../img/skylineNYC.JPG) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -152,7 +152,7 @@ div#languages {
 	background: linear-gradient(
 		rgba(255, 255, 255, 0.7),
 		rgba(255, 255, 255, 0.7)
-		), url(/img/nycity.jpg) center no-repeat;
+		), url(../img/nycity.jpg) center no-repeat;
 	background-color: rgba(99, 146, 255, 0.75);
 	padding-bottom: 250px;
 	padding-top: 150px;
@@ -187,6 +187,19 @@ p {
 p.contact {
 	text-align: center;
 	font-size: 25px;
+}
+
+/*For div#hideThenShow for scroll animation*/
+.beforeScroll {
+  height: 80px;
+  width: 80px;
+  display: none;
+}
+
+.afterScroll {
+  height: 80px;
+  width: 80px;
+  display: inline;
 }
 
 p.skills {
@@ -321,7 +334,6 @@ img#simon, #admintracker, #motivate {
 	}
 
 	div#languages {
-		background: url()
 		background-color: rgba(99, 146, 255, 0.85);
     padding-bottom: 500px;
     padding-top: 180px;
@@ -550,12 +562,4 @@ img#simon, #admintracker, #motivate {
 		margin-top: 150px;
 	}
 }
-
-
-
-
-
-
-
-
 
