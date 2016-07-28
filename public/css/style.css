@@ -6,6 +6,10 @@ html {
   background-size: cover;
 }
 
+.hidden {
+  display: none;
+}
+
 .welcome_to {
   height: 2000px;
   width: 1500px;
@@ -15,7 +19,7 @@ html {
     rgba(0, 0, 0, 0.35));
 }
 
-.hi, .kyle, .bid_welcome, .site {
+#hi, #kyle, #bid_welcome, #site {
   color: white;
   font-size: 70px;
   display: block;

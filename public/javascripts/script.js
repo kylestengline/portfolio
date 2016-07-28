@@ -1,9 +1,9 @@
 "use strict";
 
-  var hi = $(".hi");
-  var kyle = $(".kyle");
-  var bid_welcome = $(".bid_welcome");
-  var site = $(".site");
+  var hi = $("#hi");
+  var kyle = $("#kyle");
+  var bid_welcome = $("#bid_welcome");
+  var site = $("#site");
   var html = $("html").css("background-color", "#F19051");
   var welcome_div = $(".welcome_to");
   var body = $("body");
@@ -14,6 +14,8 @@
   site.hide();
 
 $(document).ready(function() {
+
+  $("div").removeClass("hidden");
 
 		$('.bio').hide();
 	setTimeout(function(){
