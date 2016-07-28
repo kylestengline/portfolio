@@ -56,8 +56,8 @@ $(document).ready(function() {
   }, 6000)
 
   setTimeout(function(){
-    welcome_div.fadeOut(2500);
-    body.fadeIn(5500);
+    welcome_div.fadeOut(3500);
+    body.fadeIn(4500);
   }, 5000);
 
 // function to scroll to the skills area
