@@ -1,41 +1,64 @@
 "use strict";
 
+  var hi = $(".hi");
+  var kyle = $(".kyle");
+  var bid_welcome = $(".bid_welcome");
+  var site = $(".site");
+  var html = $("html").css("background-color", "#F19051");
+  var welcome_div = $(".welcome_to");
+  var body = $("body");
+  // hide elements
+  hi.hide(); 
+  kyle.hide(); 
+  bid_welcome.hide(); 
+  site.hide();
+
 $(document).ready(function() {
-
-// isn't working on page load
-	// $('.loading').fadeOut('slow');
-	
-	// $(this).scrollTop(0);
-
-	// Moves up divs below the image and makes site not look good.
-	// 	$('#me').hide();
-	// setTimeout(function() {
-	// 	$('#me').fadeIn(4000);
-	// }, 2000);
-
-//  var fadeInClient = $(".client");
-//  var fadeInServer = $(".server");
-//    fadeInClient.hide();
-//    fadeInServer.hide();
-
-// scroll animation
-    var showDiv = $("#hideThenShow");
-    var pos = showDiv.position();
-
-    $(window).scroll(function() {
-      var windowPos = $(window).scrollTop();
-      if (windowPos >= (pos.top - 100)) {
-        showDiv.addClass("afterScroll");
-      } else {
-        showDiv.removeClass("afterScroll");
-      }
-    });
-    // scroll animation end
 
 		$('.bio').hide();
 	setTimeout(function(){
     $('.bio').show();
-  }, 1200)
+  }, 6000);
+
+// Text fading in and out
+
+  //the fadein
+  hi.fadeIn(1500);
+  setTimeout(function(){
+    kyle.fadeIn(1500);
+  }, 1000);
+
+  setTimeout(function(){
+    bid_welcome.fadeIn(1500);
+  }, 2000);
+
+  setTimeout(function(){
+    site.fadeIn(1500);
+  }, 3000);
+
+//////////////////////
+  //words fadeout//
+/////////////////////
+  setTimeout(function(){
+    site.fadeOut(1000);
+  }, 4500);
+
+  setTimeout(function(){
+    bid_welcome.fadeOut(1000);
+  }, 5000);
+
+  setTimeout(function(){
+    kyle.fadeOut(1000);
+  }, 5500);
+
+  setTimeout(function(){
+    hi.fadeOut(1000);
+  }, 6000)
+
+  setTimeout(function(){
+    welcome_div.fadeOut(2500);
+    body.fadeIn(5500);
+  }, 5000);
 
 // function to scroll to the skills area
 // will not scroll until clicked
@@ -46,8 +69,6 @@ var	scrollToSkills = function(skills) {
     
 	$("#skills").click(function() {
 		scrollToSkills('skills');
-//    fadeInClient.fadeIn(4500);
-//    fadeInServer.fadeIn(4500);
 		// makes scroll go smooth when we return false
 			return false;
 
@@ -99,13 +120,5 @@ var	scrollToSkills = function(skills) {
 			return false;
 	})
 });
-
-
-
-
-
-
-
-
 
 

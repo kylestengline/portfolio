@@ -6,20 +6,22 @@ html {
   background-size: cover;
 }
 
-/*body {
-	background: rgba(0, 0, 0, 0.7);
-	background-size: cover;
+.welcome_to {
+  height: 2000px;
+  width: 1500px;
+  margin-left: 40px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.35));
 }
-*/
-/*.loading {
-	position: fixed;
-	margin: 0 auto;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url('img/yinyang_loading.gif') rgb(250, 250, 250);
+
+.hi, .kyle, .bid_welcome, .site {
+  color: white;
+  font-size: 70px;
+  display: block;
+  margin-right: 100px;
 }
-*/
+
 h1, h2, h3 {
 	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
 	font-weight: 100;
@@ -39,14 +41,6 @@ h1.name {
 
 .container {
 	overflow: hidden;
-}
-
-img#me {
-	/*animation: fadein 4.5s;*/
-}
-
-h3.bio {
-	animation: fadein 3s;
 }
 
 h4 {
@@ -187,19 +181,6 @@ p {
 p.contact {
 	text-align: center;
 	font-size: 25px;
-}
-
-/*For div#hideThenShow for scroll animation*/
-.beforeScroll {
-  height: 80px;
-  width: 80px;
-  display: none;
-}
-
-.afterScroll {
-  height: 80px;
-  width: 80px;
-  display: inline;
 }
 
 p.skills {
