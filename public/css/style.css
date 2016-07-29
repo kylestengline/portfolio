@@ -12,17 +12,17 @@ html {
 
 .welcome_to {
   height: 2000px;
-  width: 1500px;
+  width: 2000px;
   margin-left: 40px;
   background: linear-gradient(
     rgba(0, 0, 0, 0.35),
     rgba(0, 0, 0, 0.35));
 }
 
-#hi, #kyle, #bid_welcome, #site {
+h2#hi, h2#kyle, h2#bid_welcome, h2#site {
   color: white;
   font-size: 70px;
-  display: block;
+  text-decoration: none;
   margin-right: 100px;
 }
 
