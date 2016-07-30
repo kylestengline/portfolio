@@ -152,7 +152,7 @@ div#languages {
 		rgba(255, 255, 255, 0.7)
 		), url(../img/nycity.jpg) center no-repeat;
 	background-color: rgba(99, 146, 255, 0.75);
-	padding-bottom: 250px;
+	padding-bottom: 150px;
 	padding-top: 65px;
 	margin-top: 150px;
   height: 500px;
@@ -214,6 +214,7 @@ div.client {
   width: 100px;
   height: 200px;
   margin-left: 5%;
+  margin-top: 90px;
   margin-bottom: 12%;
 }
 
