@@ -4,7 +4,6 @@
   var kyle = $("#kyle");
   var bid_welcome = $("#bid_welcome");
   var site = $("#site");
-  var html = $("html").css("background-color", "#F19051");
   var welcome_div = $(".welcome_to");
   var body = $("body");
   // hide elements
@@ -20,8 +19,12 @@ $(document).ready(function() {
 		$('.bio').hide();
 	setTimeout(function(){
     $('.bio').show();
-  }, 6000);
+  }, 7000);
 
+  $(".container").hide();
+  setTimeout(function(){
+    $(".container").show();
+  }, 7000);
 // Text fading in and out
 
   //the fadein
@@ -58,8 +61,8 @@ $(document).ready(function() {
   }, 6000)
 
   setTimeout(function(){
-    welcome_div.fadeOut(3500);
-    body.fadeIn(4500);
+    welcome_div.fadeOut(2500);
+    body.fadeIn(3500);
   }, 5000);
 
 // function to scroll to the skills area

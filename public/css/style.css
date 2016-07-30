@@ -21,7 +21,7 @@ html {
 
 h2#hi, h2#kyle, h2#bid_welcome, h2#site {
   color: white;
-  font-size: 70px;
+  font-size: 50px;
   text-decoration: none;
   margin-right: 100px;
 }
@@ -192,10 +192,33 @@ p.skills {
 	font-size: 30px;
 }
 
-p.client, .server {
+.client, .server {
 	color: black;
 	margin: 0 auto;
 	font-size: 25px;
+  display: inline-block;
+}
+
+div.client {
+  margin-right: 20%;
+  width: 500px;
+  height: 300px;
+}
+
+div.server {
+  margin-left: 20%;
+  width: 500px;
+  height: 300px;
+}
+
+.html, .css, .js, .jq, .boot {
+  display: block;
+  padding: 10px;
+}
+
+.ror, .post, .sql, .rspec, .cukes, .cala, .git {
+  display: block;
+  padding: 10px;
 }
 
 img {
