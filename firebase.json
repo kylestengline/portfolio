@@ -1,11 +1,15 @@
 {
-  "firebase": "kylestengline"
-},
+  "database": {
+      "rules": "database.rules.json"
+    },
   "hosting": {
-  "public": "public"
-  },
-  "ignore": [
-      "firebase.json",
-      "**/.*"
-    ]
+      "firebase": "kylestengline",
+      "public": "public",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
 }
