@@ -12,18 +12,17 @@ html {
 
 .welcome_to {
   height: 2000px;
-  width: 2000px;
-  margin-left: 40px;
   background: linear-gradient(
     rgba(0, 0, 0, 0.35),
     rgba(0, 0, 0, 0.35));
+  text-align: center;
 }
 
 h2#hi, h2#kyle, h2#bid_welcome, h2#site {
-  color: white;
+  color: #f19051;
   font-size: 50px;
+  margin-top: 50px;
   text-decoration: none;
-  margin-right: 100px;
 }
 
 h1, h2, h3 {
@@ -56,7 +55,7 @@ h4 {
 }
 
 h4.projects {
-	font-size: 25px;
+	font-size: 35px;
 	color: white;
 	margin-bottom: 10px;
 	margin-left: -15px;
@@ -128,17 +127,13 @@ a.the_code:hover {
 	color: #3B91E8;
 }
 
-a.email, .linkedin, .github/*, .instagram*/ {
+a.email, .linkedin, .github {
 	padding-top: 10px;
 	display: inline-block;
 	padding-left: 5px;
 	padding-right: 5px; 
 	color: black;
 }
-/*
-div#projects {
-	background: rgba(99, 146, 255, 0.55);
-}*/
 
 div#about {
 	padding-right: 200px;
@@ -163,19 +158,6 @@ div#contact {
 	margin-top: 100px;
 }
 
-#one, #two, #three {
-	float: left;
-	line-height: 1.5em;
-  width: 25%;
-  height: 500px;
-  margin-left: 75px;
-  margin-bottom: 70px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 3%;
-  background-color: rgb(242, 105, 55);
-}
-
 p {
 	font-family: sans-serif, 'Josefin Slab', serif, Helvetica;
 	font-weight: 100;	
@@ -189,16 +171,11 @@ p.contact {
 }
 
 h4.skills {
-	line-height: 1.2em;
+	line-height: 2em;
 	font-size: 30px;
-}
-
-.skills {
   position: absolute;
-  left: 50%;
-  background-color: red;
-  margin-top: 150px;
-  margin-left: -50px;
+  left: 45%;
+  margin-top: -10px;
 }
 
 .client, .server {
@@ -210,12 +187,12 @@ h4.skills {
 }
 
 div.client {
-  margin-right: 25%;
-  width: 100px;
+  margin-right: 10%;
+  width: 200px;
   height: 200px;
-  margin-left: 5%;
+  margin-left: 0%;
   margin-top: 90px;
-  margin-bottom: 12%;
+  margin-bottom: 15%;
 }
 
 div.server {
@@ -225,7 +202,7 @@ div.server {
 
 .react, .html, .css, .js, .jq, .boot {
   display: block;
-  padding: 10px;
+  padding: 12px;
 }
 
 .ror, .post, .sql, .rspec, .cukes, .cala, .git {
@@ -251,12 +228,6 @@ img.github, .linkedin {
 	width: 75px;
 	}
 
-/*img.instagram {
-	border-radius: 0%;
-	height: 65px;
-	width: 65px;
-}*/
-
 img#contact_back {
 	border-radius: 0%;
 	max-width: 100%;
@@ -267,19 +238,13 @@ img#contact_back {
 }
 
 img#simon, #admintracker, #motivate {
-	border-radius: 3% 3% 0% 0%;
-	border: none;
-	margin-top: 5%;
-	height: 33%;
-  width: 90%;
+  border-radius: 1%;
+  border: none;
+  height: 40%;
+  width: 50%;
+  margin-top: 5%;
 }
 
-/*switched images, so don't need this anymore*/
-/*img#simon {
-	height: 28%;
-  width: 85%;
-}
-*/
 @keyframes slideInSmooth {
 	from {
 		margin-left: 100%;
@@ -310,28 +275,58 @@ img#simon, #admintracker, #motivate {
 /*iPhone 6*/
 @media screen and (max-width: 800px) {
 
-		#one, #two, #three {
-			line-height: 1.5em;
-	    width: 70%;
-	    height: 750px;
-	   	margin-bottom: 70px;
-	    text-align: center;
-	    margin-left: 105px;
-	}
+  .welcome_to {
+    height: 2000px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35));
+    text-align: center;
+  }
+
+  .client, .server {
+    font-size: 40px;
+  }
+
+  div.client {
+    margin-top: 150px;
+  }
+
+  div.server {
+    width: 250px;
+  }
+
+  h2#hi, h2#kyle, h2#bid_welcome, h2#site {
+    color: #f19051;
+    font-size: 65px;
+    margin-top: 100px;
+    text-decoration: none;
+  }
+
+  h4.skills {
+    line-height: 2em;
+    font-size: 30px;
+    position: absolute;
+    left: 35%;
+    margin-top: -10px;
+  }
+
+  img#simon, #admintracker, #motivate {
+    border-radius: 1%;
+    border: none;
+    height: 40%;
+    width: 75%;
+    margin-top: 12%;
+  }
 
 	.container {
 		overflow: hidden;
 		padding-left: 20px;
 	}
 
-	div#two {
-		height: 820px;
-	}
-
 	div#languages {
 		background-color: rgba(99, 146, 255, 0.85);
-    padding-bottom: 500px;
-    padding-top: 180px;
+    padding-bottom: 600px;
+    padding-top: 300px;
     margin-top: 650px;
 	}
 
@@ -377,13 +372,6 @@ img#simon, #admintracker, #motivate {
 		margin-left: 140px;
 	}
 
-	img#simon, #admintracker, #motivate {
-		padding-top: 5%;
-		margin: 0 auto;	
-		border-radius: 3% 3% 0% 0%;
-
-	}
-
 	img.email {
 		height: 120px;
 		width: 120px;
@@ -412,7 +400,7 @@ img#simon, #admintracker, #motivate {
 
 	a#contact_me, #my_projects, #skills {
 		padding: 15px;
-}
+  }
 
 	a.project, .the_code {
 		font-size: 38px;
@@ -421,17 +409,6 @@ img#simon, #admintracker, #motivate {
 	a#my_projects_two {
 		font-size: 33px;
   }
-
-	h4.skills {
-		font-size: 35px;
-		padding-bottom: 0px;
-		padding-top: 0px;
-		color: black;
-		/*background-color: rgba(99, 146, 255, 0.85);*/
-		line-height: 1.5em;
-		padding-right: 25px;
-		margin-top: 150px;
-	}
 }
 
 
@@ -440,33 +417,53 @@ img#simon, #admintracker, #motivate {
 /*iPhone 5*/
 @media screen and (max-width: 700px) {
 
-	#one, #two, #three {
-		line-height: 1.5em;
-    width: 70%;
-    height: 750px;
-    margin-bottom: 70px;
+  .welcome_to {
+    height: 2000px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35));
     text-align: center;
-    margin-left: 105px;
-	}
+  }
 
+  h2#hi, h2#kyle, h2#bid_welcome, h2#site {
+    color: #f19051;
+    font-size: 65px;
+    margin-top: 100px;
+    text-decoration: none;
+  }
+
+  h4.skills {
+    line-height: 2em;
+    font-size: 45px;
+    position: absolute;
+    left: 35%;
+    margin-top: -10px;
+  }
+  
+  .client, .server {
+    font-size: 40px;
+  }
+
+  div.client {
+    margin-top: 150px;
+  }
+
+  img#simon, #admintracker, #motivate {
+    border-radius: 1%;
+    border: none;
+    height: 40%;
+    width: 75%;
+    margin-top: 12%;
+  }
 	.container {
 		overflow: hidden;
 		padding-left: 20px;
 	}
 
-	div#two {
-		height: 820px;
-	}
-
-	img#simon, #admintracker, #motivate {
-		padding-top: 5%;
-		margin: 0 auto;
-	}
-
 	div#languages {
 		background: rgba(99, 146, 255, 0.7);
-    padding-bottom: 500px;
-    padding-top: 180px;
+    padding-bottom: 600px;
+    padding-top: 300px;
     margin-top: 650px;
 	}
 
@@ -544,17 +541,6 @@ img#simon, #admintracker, #motivate {
 
 	a#contact_me, #my_projects, #skills {
 		padding: 15px;
-	}
-
-	h4.skills {
-		font-size: 35px;
-		padding-bottom: 0px;
-		padding-top: 0px;
-		color: black;
-		/*background-color: #5981DE;*/
-		line-height: 1.5em;
-		padding-right: 25px;
-		margin-top: 150px;
 	}
 }
 
