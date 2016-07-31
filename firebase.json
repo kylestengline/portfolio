@@ -1,8 +1,9 @@
 {
-  "database": {
-    "rules": "database.rules.json"
-  },
-  "hosting": {
-    "public": "public"
-  }
+  "firebase": "kylestengline",
+  "public": "public",
+  "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
 }
