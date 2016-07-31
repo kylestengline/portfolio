@@ -1,6 +1,9 @@
 {
-  "firebase": "kylestengline",
-  "public": "public",
+  "firebase": "kylestengline"
+},
+  "hosting": {
+  "public": "public"
+  },
   "ignore": [
       "firebase.json",
       "**/.*"
