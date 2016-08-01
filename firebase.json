@@ -1,5 +1,5 @@
 {
-  "firebase": "kylestengline",
+  "firebase": "portfolio",
   "public": "public",
   "ignore": [
       "firebase.json",
