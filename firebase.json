@@ -1,9 +1,15 @@
 {
-  "firebase": "portfolio",
-  "public": "public",
-  "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "firebase": "portfolio",
+    "public": "public",
+    "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+  
+  }
 }
