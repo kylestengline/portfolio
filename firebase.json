@@ -3,7 +3,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "firebase": "portfolio-6f15b",
+    "firebase": "portfolio",
     "public": "public",
     "ignore": [
         "firebase.json",
