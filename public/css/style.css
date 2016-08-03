@@ -283,8 +283,9 @@ img#simon, #admintracker, #motivate {
     text-align: center;
   }
 
-  .client, .server {
+ div.client, div.server {
     font-size: 40px;
+    margin-bottom: 350px;
   }
 
   div.client {
@@ -317,7 +318,6 @@ img#simon, #admintracker, #motivate {
     width: 75%;
     margin-top: 12%;
   }
->>>>>>> livin-it-up
 
 	.container {
 		overflow: hidden;
@@ -374,13 +374,13 @@ img#simon, #admintracker, #motivate {
 	}
 
 	img.email {
-		height: 120px;
-		width: 120px;
+		height: 140px;
+		width: 140px;
 	}
 
 	img.github, .linkedin {
-		height: 130px;
-		width: 130px;
+		height: 150px;
+		width: 150px;
 	}
 
 	p {
@@ -388,14 +388,6 @@ img#simon, #admintracker, #motivate {
 		font-weight: 100;
 		line-height: 1.2em;
 		padding: 20px;
-	}
-
-	p.client, .server {
-		font-size: 35px;
-		font-weight: 100;
-		line-height: 1.2em;
-		padding-right: 5%;
-    padding-left: 5%;
 	}
 
 	p.contact {
@@ -415,8 +407,12 @@ img#simon, #admintracker, #motivate {
 		font-size: 38px;
 	}
 
+  a#back_to_top {
+    font-size: 40px;
+  }
+
 	a#my_projects_two {
-		font-size: 33px;
+    font-size: 40px;
   }
 }
 
@@ -449,8 +445,9 @@ img#simon, #admintracker, #motivate {
     margin-top: -10px;
   }
   
-  .client, .server {
+  div.client, div.server {
     font-size: 40px;
+    margin-bottom: 350px;
   }
 
   div.client {
@@ -519,13 +516,13 @@ img#simon, #admintracker, #motivate {
 	}
 
 	img.email {
-		height: 120px;
-		width: 120px;
+		height: 140px;
+		width: 140px;
 	}
 
 	img.github, .linkedin {
-		height: 130px;
-		width: 130px;
+		height: 150px;
+		width: 150px;
 	}
 
 	p {
@@ -533,14 +530,6 @@ img#simon, #admintracker, #motivate {
 		font-weight: 100;
 		line-height: 1.2em;
 		padding: 20px;
-	}
-
-	p.client, .server {
-		font-size: 35px;
-		font-weight: 100;
-		line-height: 1.2em;
-		padding-right: 5%;
-    padding-left: 5%;
 	}
 
 	p.contact {
@@ -555,6 +544,14 @@ img#simon, #admintracker, #motivate {
 	a.project, .the_code {
 		font-size: 38px;
 	}
+
+	a#my_projects_two {
+    font-size: 40px;
+  }
+
+  a#back_to_top {
+    font-size: 40px;
+  }
 
 	a#contact_me, #my_projects, #skills {
 		padding: 15px;
