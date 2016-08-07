@@ -11,5 +11,10 @@
         "**/node_modules/**"
       ]
   
-  }
+  },
+  "redirects": [ {
+    "source" : "https://portfolio-6f15b.firebaseapp.com/",
+    "destination" : "http://www.kylestengline.com",
+    "type" : 301
+  } ] 
 }
