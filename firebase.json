@@ -14,7 +14,7 @@
   },
   "redirects": [ {
     "source" : "https://portfolio-6f15b.firebaseapp.com/",
-    "destination" : "http://www.kylestengline.com",
+    "destination" : "https://kylestengline.com",
     "type" : 301
   } ] 
 }
