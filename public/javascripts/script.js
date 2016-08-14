@@ -3,14 +3,14 @@
   var hi = $("#hi");
   var kyle = $("#kyle");
   var bid_welcome = $("#bid_welcome");
-  var site = $("#site");
+  var dev = $("#developer");
   var welcome_div = $(".welcome_to");
   var body = $("body");
   // hide elements
   hi.hide(); 
   kyle.hide(); 
   bid_welcome.hide(); 
-  site.hide();
+  dev.hide();
 
 $(document).ready(function() {
 
@@ -34,36 +34,36 @@ $(document).ready(function() {
   }, 1000);
 
   setTimeout(function(){
-    bid_welcome.fadeIn(1500);
+    dev.fadeIn(1500);
   }, 2000);
 
   setTimeout(function(){
-    site.fadeIn(1500);
+    bid_welcome.fadeIn(1500);
   }, 3000);
 
 //////////////////////
   //words fadeout//
 /////////////////////
   setTimeout(function(){
-    site.fadeOut(1000);
-  }, 4500);
-
-  setTimeout(function(){
     bid_welcome.fadeOut(1000);
   }, 5000);
 
   setTimeout(function(){
-    kyle.fadeOut(1000);
+    dev.fadeOut(1000);
   }, 5500);
 
   setTimeout(function(){
+    kyle.fadeOut(1000);
+  }, 6000);
+
+  setTimeout(function(){
     hi.fadeOut(1000);
-  }, 6000)
+  }, 6500)
 
   setTimeout(function(){
     welcome_div.fadeOut(2500);
     body.fadeIn(3500);
-  }, 5000);
+  }, 5500);
 
 // function to scroll to the skills area
 // will not scroll until clicked
