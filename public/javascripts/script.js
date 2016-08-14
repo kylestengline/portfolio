@@ -24,7 +24,7 @@ $(document).ready(function() {
   $(".container").hide();
   setTimeout(function(){
     $(".container").show();
-  }, 7000);
+  }, 7500);
 // Text fading in and out
 
   //the fadein
