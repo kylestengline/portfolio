@@ -3,7 +3,7 @@
   var hi = $("#hi");
   var kyle = $("#kyle");
   var bid_welcome = $("#bid_welcome");
-  var site = $("#site");
+  var dev = $("#developer");
   var welcome_div = $(".welcome_to");
   var body = $("body");
   // hide elements
@@ -38,14 +38,14 @@ $(document).ready(function() {
   }, 2000);
 
   setTimeout(function(){
-    site.fadeIn(1500);
+    dev.fadeIn(1500);
   }, 3000);
 
 //////////////////////
   //words fadeout//
 /////////////////////
   setTimeout(function(){
-    site.fadeOut(1000);
+    dev.fadeOut(1000);
   }, 4500);
 
   setTimeout(function(){
