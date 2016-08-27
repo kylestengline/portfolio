@@ -353,7 +353,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	h4.projects {
 	 color: white;
-	 margin-bottom: 20px;
+   margin-bottom: -20px;
 	 margin-top: 460px;
 	 font-size: 45px;
 	}
@@ -495,7 +495,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	h4.projects {
 	 color: white;
-	 margin-bottom: 20px;
+   margin-bottom: -20px;
 	 margin-top: 460px;
 	 font-size: 45px;
 	}
