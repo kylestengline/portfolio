@@ -311,7 +311,7 @@ img#simon, #admintracker, #motivate, #blogtest {
     margin-top: -10px;
   }
 
-  img#simon, #admintracker, #motivate {
+  img#simon, #admintracker, #motivate, #blogtest {
     border-radius: 1%;
     border: none;
     height: 40%;
@@ -454,7 +454,7 @@ img#simon, #admintracker, #motivate, #blogtest {
     margin-top: 150px;
   }
 
-  img#simon, #admintracker, #motivate {
+  img#simon, #admintracker, #motivate, #blogtest{
     border-radius: 1%;
     border: none;
     height: 40%;
