@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   $("div").removeClass("hidden");
 
-		$('.bio').hide();
+  $('.bio').hide();
 	setTimeout(function(){
     $('.bio').show();
   }, 7000);
@@ -25,40 +25,46 @@ $(document).ready(function() {
   setTimeout(function(){
     $(".container").show();
   }, 7500);
+
 // Text fading in and out
-
-  //the fadein
-  hi.fadeIn(1500);
-  setTimeout(function(){
-    kyle.fadeIn(1500);
-  }, 1000);
-
-  setTimeout(function(){
-    dev.fadeIn(1500);
-  }, 2000);
-
-  setTimeout(function(){
-    bid_welcome.fadeIn(1500);
-  }, 3000);
-
+//////////////////////
+  //words fadein//
+/////////////////////
+  var fadeElIn = [hi, kyle, dev, bid_welcome]
+  fadeElIn.forEach(function(fade, time){
+    setTimeout(function(){
+      fade.fadeIn(1500);
+    }, time * 1000);
+  });
+  
 //////////////////////
   //words fadeout//
 /////////////////////
-  setTimeout(function(){
-    bid_welcome.fadeOut(1000);
-  }, 5000);
+  
+//fading out first elements first then last elements at the same time.
+  var revEl = fadeElIn.reverse();
+  revEl.forEach(function(elem, time){
+    setTimeout(function(){
+      elem.fadeOut(1000);
+      time = 5000
+    }, time * 500);
+  }) 
 
-  setTimeout(function(){
-    dev.fadeOut(1000);
-  }, 5500);
+//  setTimeout(function(){
+//    bid_welcome.fadeOut(1000);
+//  }, 5000);
 
-  setTimeout(function(){
-    kyle.fadeOut(1000);
-  }, 6000);
+//  setTimeout(function(){
+//    dev.fadeOut(1000);
+//  }, 5500);
 
-  setTimeout(function(){
-    hi.fadeOut(1000);
-  }, 6500)
+//  setTimeout(function(){
+//    kyle.fadeOut(1000);
+//  }, 6000);
+
+//  setTimeout(function(){
+//    hi.fadeOut(1000);
+//  }, 6500)
 
   setTimeout(function(){
     welcome_div.fadeOut(2500);
