@@ -1,16 +1,16 @@
 "use strict";
 
-  var hi = $("#hi");
-  var kyle = $("#kyle");
-  var bid_welcome = $("#bid_welcome");
-  var dev = $("#developer");
-  var welcome_div = $(".welcome_to");
-  var body = $("body");
-  // hide elements
-  hi.hide(); 
-  kyle.hide(); 
-  bid_welcome.hide(); 
-  dev.hide();
+var hi = $("#hi");
+var kyle = $("#kyle");
+var bid_welcome = $("#bid_welcome");
+var dev = $("#developer");
+var welcome_div = $(".welcome_to");
+var body = $("body");
+// hide elements
+hi.hide(); 
+kyle.hide(); 
+bid_welcome.hide(); 
+dev.hide();
 
 $(document).ready(function() {
 
@@ -18,8 +18,8 @@ $(document).ready(function() {
 
   $('.bio').hide();
 	setTimeout(function(){
-    $('.bio').show();
-  }, 7000);
+    $('.bio').fadeIn(2000);
+  }, 7500);
 
   $(".container").hide();
   setTimeout(function(){
@@ -30,6 +30,7 @@ $(document).ready(function() {
 //////////////////////
   //words fadein//
 /////////////////////
+  
   var fadeElIn = [hi, kyle, dev, bid_welcome]
   fadeElIn.forEach(function(fade, time){
     setTimeout(function(){
@@ -41,65 +42,50 @@ $(document).ready(function() {
   //words fadeout//
 /////////////////////
   
-//fading out first elements first then last elements at the same time.
   var revEl = fadeElIn.reverse();
   revEl.forEach(function(elem, time){
     setTimeout(function(){
-      elem.fadeOut(1000);
-      time = 5000
-    }, time * 500);
+      setTimeout(function(){
+        elem.fadeOut(1000);
+      }, time * 600);
+    }, 4800);
   }) 
 
-//  setTimeout(function(){
-//    bid_welcome.fadeOut(1000);
-//  }, 5000);
-
-//  setTimeout(function(){
-//    dev.fadeOut(1000);
-//  }, 5500);
-
-//  setTimeout(function(){
-//    kyle.fadeOut(1000);
-//  }, 6000);
-
-//  setTimeout(function(){
-//    hi.fadeOut(1000);
-//  }, 6500)
-
+  /////////////////////////////////////////////
+  ////fade out welcome_div and fade in body////
+  /////////////////////////////////////////////
   setTimeout(function(){
-    welcome_div.fadeOut(2500);
-    body.fadeIn(3500);
-  }, 5500);
+    welcome_div.fadeOut(2400);
+    body.fadeIn(2900);
+  }, 5300);
 
 // function to scroll to the skills area
 // will not scroll until clicked
-var	scrollToSkills = function(skills) {
-	var skill = $("a[name=" +skills+ "]");
-	$('html,body').animate({scrollTop: skill.offset().top},1500);
-}
+  var	scrollToSkills = function(skills) {
+    var skill = $("a[name=" +skills+ "]");
+    $('html,body').animate({scrollTop: skill.offset().top},1500);
+  }
     
 	$("#skills").click(function() {
 		scrollToSkills('skills');
 		// makes scroll go smooth when we return false
-			return false;
-
+    return false;
 	})
-
 
 	// scrolls to the projects area
 	var	scrollToProjects = function(projects) {
 		var projects = $("a[name=" +projects+ "]");
 		$('html,body').animate({scrollTop: projects.offset().top},1500);
-}
+  }
 
 	$("#my_projects").click(function() {
 		scrollToProjects('projects');
-			return false;
+    return false;
 	}) 
 
 	$("#my_projects_two").click(function() {
 		scrollToProjects('projects');
-			return false;
+    return false;
 	}) 
 
 
@@ -107,16 +93,16 @@ var	scrollToSkills = function(skills) {
 	var	scrollToContact = function(contact) {
 		var contact = $("a[name=" +contact+"]");
 		$('html,body').animate({scrollTop: contact.offset().top},1500);
-}
+  }
 		
 	$("#contact_me").click(function() {
 		scrollToContact('Contact');
-			return false;
+    return false;
 	}) 
 
 	$("#contact").click(function() {
 		scrollToContact('Contact');
-			return false;
+    return false;
 	})
 
 
@@ -128,8 +114,7 @@ var	scrollToSkills = function(skills) {
 
 	$("#back_to_top").click(function() {
 		scrollToTop('top');
-			return false;
+    return false;
 	})
 });
-
 
