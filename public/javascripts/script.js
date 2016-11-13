@@ -27,10 +27,7 @@ $(document).ready(function() {
   }, 7500);
 
 // Text fading in and out
-//////////////////////
   //words fadein//
-/////////////////////
-  
   var fadeElIn = [hi, kyle, dev, bid_welcome]
   fadeElIn.forEach(function(fade, time){
     setTimeout(function(){
@@ -38,10 +35,7 @@ $(document).ready(function() {
     }, time * 1000);
   });
   
-//////////////////////
   //words fadeout//
-/////////////////////
-  
   var revEl = fadeElIn.reverse();
   revEl.forEach(function(elem, time){
     setTimeout(function(){
@@ -51,13 +45,11 @@ $(document).ready(function() {
     }, 4800);
   }) 
 
-  /////////////////////////////////////////////
   ////fade out welcome_div and fade in body////
-  /////////////////////////////////////////////
   setTimeout(function(){
     welcome_div.fadeOut(2400);
     body.fadeIn(2900);
-  }, 5300);
+  }, 5400);
 
 // function to scroll to the skills area
 // will not scroll until clicked

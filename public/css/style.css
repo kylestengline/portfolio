@@ -84,7 +84,6 @@ a:hover {
 }
 
 a#contact {
-	color: white;
 	font-size: 25px;
 	color: #6FA5DC;
 	margin: 0 auto;
@@ -153,7 +152,7 @@ div#languages {
   height: 500px;
 }
 
-div#contact {
+div#contact_info {
 	background-color: white;
 	margin-top: 100px;
 }
@@ -216,13 +215,13 @@ img {
 	border: 3.2px solid white;
 }
 
-img.email {
+img.email-img {
 	border-radius: 0%;
 	height: 70px;
 	width: 70px;
-	}
+}
 
-img.github, .linkedin {
+img.github-img, .linkedin-img {
 	border-radius: 0%;
 	height: 75px;
 	width: 75px;
@@ -373,12 +372,12 @@ img#simon, #admintracker, #motivate, #blogtest {
 		margin-left: 140px;
 	}
 
-	img.email {
+	img.email-img {
 		height: 140px;
 		width: 140px;
 	}
 
-	img.github, .linkedin {
+	img.github-img, .linkedin-img {
 		height: 150px;
 		width: 150px;
 	}
@@ -515,12 +514,12 @@ img#simon, #admintracker, #motivate, #blogtest {
 		margin-left: 140px;
 	}
 
-	img.email {
+	img.email-img {
 		height: 140px;
 		width: 140px;
 	}
 
-	img.github, .linkedin {
+	img.github-img, .linkedin-img {
 		height: 150px;
 		width: 150px;
 	}
