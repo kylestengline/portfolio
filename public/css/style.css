@@ -57,9 +57,8 @@ h4 {
 h4.projects {
 	font-size: 35px;
 	color: white;
-	margin-left: -15px;
 	margin-top: 100px;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
 }
 
 h5.contact {
@@ -111,17 +110,12 @@ a#my_projects_two:hover {
 	color: #ff0000;
 }
 
-a.project, .the_code {
+a.project {
 	font-size: 20px;
 	color: rgb(47, 254, 238);
 }
 
 a.project:hover {
-	-webkit-transition: all 1s;
-	color: #3B91E8;
-}
-
-a.the_code:hover {
 	-webkit-transition: all 1s;
 	color: #3B91E8;
 }
@@ -170,51 +164,41 @@ p.contact {
 }
 
 /* Show Text on Hover */
-.wrapping {
+#one, #two, #three, #four {
   position: relative;
-  height: 200px;
-  width: 300px;
-  -webkit-transition: opacity 0.8s ease-in-out;
-  -moz-transition: opacity 0.8s ease-in-out;
-  -o-transition: opacity 0.8s ease-in-out;
-  -ms-transition: opacity 0.8s ease-in-out;
-  transition: opacity: 0.8s ease-in-out;
+  margin-bottom: 5%;
 }
 
-.wrapping img {
-  position: relative;
-  top 0;
-  left 0;
-  z-index: 1;
+.wrapping {
+  display: inline;
+}
+
+.text-display {
+  font-size: 30px;
+  transform: translateY(20px);
+  overflow: hidden;
+  z-index: 100;
+  color: white;
 }
 
 .hover-text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
   opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  height: 100%;
+  width: 50%;
+  border-radius: 2px;
+  background: rgba(0,0,0, 0.7);
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 .wrapping:hover .hover-text {
   opacity: 1;
-  height: 200px;
-  width: 300px;
-  display: block;
-  visibility: visible;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-img:hover {
-  opacity: 0.4;
+  background: rgba(0,0,0, 0.7);
 }
 
 /* End Text on Hover */
@@ -292,7 +276,7 @@ img#simon, #admintracker, #motivate, #blogtest {
   border: none;
   height: 40%;
   width: 50%;
-  margin-top: 5%;
+  display: inline-block;
 }
 
 @keyframes slideInSmooth {
