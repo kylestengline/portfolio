@@ -176,7 +176,6 @@ p.contact {
 .text-display {
   font-size: 30px;
   transform: translateY(20px);
-  overflow: hidden;
   z-index: 100;
   color: white;
 }
@@ -194,6 +193,10 @@ p.contact {
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
+}
+
+.text-display, .hover-text, .wrapping {
+  overflow: hidden;
 }
 
 .wrapping:hover .hover-text {
