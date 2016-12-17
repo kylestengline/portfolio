@@ -173,11 +173,32 @@ p.contact {
   display: inline;
 }
 
+#code {
+  margin-top: -30px;
+}
+
+#code:hover {
+  text-decoration: underline;
+}
+
+#the-code {
+  margin-top: -35px;
+}
+
+#the-code:hover {
+  text-decoration: underline;
+}
+
+.text-display a {
+  color: white;
+  font-size: 25px;
+}
+
 .text-display {
   font-size: 30px;
-  transform: translateY(20px);
   z-index: 100;
   color: white;
+  font-weight: 100;
 }
 
 .hover-text {
@@ -188,7 +209,7 @@ p.contact {
   height: 99%;
   width: 50%;
   border-radius: 5px;
-  background: rgba(41, 103, 202, 0.9);
+  background: rgba(56, 87, 137, 0.9);
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
@@ -201,7 +222,7 @@ p.contact {
 
 .wrapping:hover .hover-text {
   opacity: 1;
-  background: rgba(41, 103, 202, 0.9);
+  background: rgba(56, 87, 137, 0.9);
 }
 
 /* End Text on Hover */
