@@ -337,15 +337,13 @@ img#simon, #admintracker, #motivate, #blogtest {
 /*iPhone 6*/
 @media screen and (max-width: 800px) {
 
-  .welcome_to {
+  .welcome_to, html {
     height: 2000px;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35));
+    background: #222;
     text-align: center;
   }
 
- div.client, div.server {
+  div.client, div.server {
     font-size: 40px;
     margin-bottom: 350px;
   }
@@ -493,11 +491,9 @@ img#simon, #admintracker, #motivate, #blogtest {
 /*iPhone 5*/
 @media screen and (max-width: 700px) {
 
-  .welcome_to {
+  .welcome_to, html {
     height: 2000px;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35));
+    background: #222;
     text-align: center;
   }
 
