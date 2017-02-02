@@ -220,6 +220,10 @@ p.contact {
   overflow: hidden;
 }
 
+#title-text {
+  margin-bottom: -25px;
+}
+
 .wrapping:hover .hover-text {
   opacity: 1;
   background: rgba(56, 87, 137, 0.9);
