@@ -236,43 +236,23 @@ h4.skills {
 	font-size: 30px;
   position: absolute;
   left: 45%;
-  margin-top: -10px;
+  margin-top: -20px;
 }
 
-.client, .server {
-	color: black;
-	margin: 0 auto;
-	font-size: 25px;
-  display: inline-block;
-  text-align: center;
-}
-
-div.client {
-  margin-right: 10%;
-  width: 200px;
-  height: 200px;
-  margin-left: 0%;
-  margin-top: 90px;
-  margin-bottom: 15%;
-}
-
-div.server {
-  width: 200px;
-  height: 200px;
-}
-
-.react, .html, .css, .js, .jq, .boot {
-  display: block;
-  padding: 12px;
-}
-
-.ror, .post, .sql, .rspec, .cukes, .cala, .git {
-  display: block;
-  padding: 10px;
+.experience {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-family: Roboto;
+  padding-right: 200px;
+  padding-left: 200px;
+  font-weight: 100;
+  word-spacing: 5px;
+  text-indent: 10px;
 }
 
 img {
-	border-radius: 50%;
+  border-radius: 50%;
 	max-width: 100%;
 	border: 3.2px solid white;
 }
