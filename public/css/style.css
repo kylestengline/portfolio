@@ -304,12 +304,6 @@ img#simon, #admintracker, #motivate, #blogtest {
 	to { opacity: 1;	}
 }
 
-
-/*########################################*/
-/*Solar System for skills here*/
-/*########################################*/
-
-
 /*###################################################*/
 /*MEDIA QUERIES!!!!!*/
 /*###################################################*/
@@ -321,19 +315,6 @@ img#simon, #admintracker, #motivate, #blogtest {
     height: 2000px;
     background: #222;
     text-align: center;
-  }
-
-  div.client, div.server {
-    font-size: 40px;
-    margin-bottom: 350px;
-  }
-
-  div.client {
-    margin-top: 150px;
-  }
-
-  div.server {
-    width: 250px;
   }
 
   h2#hi, h2#kyle, h2#bid_welcome, h2#developer {
@@ -348,7 +329,19 @@ img#simon, #admintracker, #motivate, #blogtest {
     font-size: 30px;
     position: absolute;
     left: 35%;
-    margin-top: -10px;
+    margin-top: -70px;
+  }
+
+  .experience {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    font-size: 40px;
+    font-family: Roboto, sans-serif;
+    padding-right: 70px;
+    padding-left: 70px;
+    font-weight: 100;
+    word-spacing: 5px;
+    text-indent: 10px;
   }
 
   img#simon, #admintracker, #motivate, #blogtest {
@@ -440,7 +433,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 	}
 
 	a#contact_me, #my_projects, #skills {
-		padding: 15px;
+		padding: 10px;
   }
 
 	a.project, .the_code {
@@ -466,8 +459,6 @@ img#simon, #admintracker, #motivate, #blogtest {
 }
 
 
-
-
 /*iPhone 5*/
 @media screen and (max-width: 700px) {
 
@@ -489,16 +480,19 @@ img#simon, #admintracker, #motivate, #blogtest {
     font-size: 45px;
     position: absolute;
     left: 35%;
-    margin-top: -10px;
+    margin-top: -70px;
   }
   
-  div.client, div.server {
+  .experience {
+    margin-top: 50px;
+    margin-bottom: 45px;
     font-size: 40px;
-    margin-bottom: 350px;
-  }
-
-  div.client {
-    margin-top: 150px;
+    font-family: Roboto, sans-serif;
+    padding-right: 70px;
+    padding-left: 70px;
+    font-weight: 100;
+    word-spacing: 5px;
+    text-indent: 10px;
   }
 
   img#simon, #admintracker, #motivate, #blogtest{
@@ -516,7 +510,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	div#languages {
 		background: rgba(99, 146, 255, 0.7);
-    padding-bottom: 600px;
+    padding-bottom: 2500px;
     padding-top: 200px;
     margin-top: 650px;
 	}
@@ -602,7 +596,7 @@ img#simon, #admintracker, #motivate, #blogtest {
   }
 
 	a#contact_me, #my_projects, #skills {
-		padding: 15px;
+		padding: 10px;
 	}
 
   a.email, .linkedin, .github, .twitter {
