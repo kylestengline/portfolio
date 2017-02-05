@@ -240,13 +240,12 @@ h4.skills {
 }
 
 .experience {
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 60px;
   font-size: 20px;
   font-family: Roboto;
-  padding-right: 200px;
-  padding-left: 200px;
-  font-weight: 100;
+  padding-right: 125px;
+  padding-left: 125px;
   word-spacing: 5px;
   text-indent: 10px;
 }
@@ -359,7 +358,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	div#languages {
 		background-color: rgba(99, 146, 255, 0.85);
-    padding-bottom: 600px;
+    padding-bottom: 2150px;
     padding-top: 200px;
     margin-top: 650px;
 	}
@@ -510,7 +509,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	div#languages {
 		background: rgba(99, 146, 255, 0.7);
-    padding-bottom: 2500px;
+    padding-bottom: 2150px;
     padding-top: 200px;
     margin-top: 650px;
 	}
