@@ -57,8 +57,8 @@ h4 {
 }
 
 h4.projects {
+	color: #49efca;
 	font-size: 35px;
-	color: white;
 	margin-top: 100px;
   margin-bottom: 20px;
 }
@@ -314,7 +314,7 @@ img#simon, #admintracker, #motivate, #blogtest {
   }
 
   h2#hi, h2#kyle, h2#bid_welcome, h2#developer {
-    color: #f19051;
+    color: #00fcff;
     font-size: 65px;
     margin-top: 100px;
     text-decoration: none;
@@ -353,7 +353,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 	}
 
 	div#languages {
-		background-color: rgba(99, 146, 255, 0.85);
+		background: #5f4cff;
     padding-bottom: 2550px;
     padding-top: 200px;
     margin-top: 650px;
@@ -380,7 +380,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 	}
 
 	h4.projects {
-	 color: white;
+	 color: #49efca;
    margin-bottom: -20px;
 	 margin-top: 460px;
 	 font-size: 45px;
@@ -469,7 +469,7 @@ img#simon, #admintracker, #motivate, #blogtest {
   }
 
   h2#hi, h2#kyle, h2#bid_welcome, h2#developer {
-    color: #f19051;
+    color: #00fcff;
     font-size: 65px;
     margin-top: 100px;
     text-decoration: none;
@@ -508,7 +508,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 	}
 
 	div#languages {
-		background: rgba(99, 146, 255, 0.7);
+		background: #5f4cff;
     padding-bottom: 2550px;
     padding-top: 200px;
     margin-top: 650px;
@@ -535,7 +535,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 	}
 
 	h4.projects {
-	 color: white;
+	 color: #49efca;
    margin-bottom: -20px;
 	 margin-top: 460px;
 	 font-size: 45px;
