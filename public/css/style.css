@@ -19,17 +19,22 @@ html {
 }
 
 h2#hi, h2#kyle, h2#bid_welcome, h2#developer {
-  color: #f19051;
+  color: #00fcff;
   font-size: 50px;
   margin-top: 65px;
   text-decoration: none;
 }
 
+/* FONTS */
+h1, h2, h3, h4, h5, 
+a, p {
+	font-family: 'Comfortaa', 'Quicksand', Roboto, sans-serif, Helvetica;
+}
+
 h1, h2, h3 {
-	font-family: Roboto, sans-serif, 'Josefin Slab', serif, Helvetica;
 	font-weight: 100;
-	font-size: 25px;
-	color: #F19051;
+	font-size: 22px;
+	color: #49efca;
 	padding: 5px;
 	line-height: 1.2em;
 }
@@ -37,7 +42,7 @@ h1, h2, h3 {
 h1.name {
 	font-size: 55px;
 	margin-top: 5px;
-	color: #F19051;
+	color: #49efca;
 	animation-duration: 2s;
 	animation-name: slideInSmooth;
 }
@@ -47,7 +52,6 @@ h1.name {
 }
 
 h4 {
-	font-family: Roboto, sans-serif, 'Josefin Slab';
 	font-weight: 500;
 	font-size: 20px;
 	padding: 10px;
@@ -62,7 +66,6 @@ h4.projects {
 }
 
 h5.contact {
-	font-family: Roboto, sans-serif, 'Josefin Slab', serif, Helvetica;
 	font-weight: 200;
 	color: white;
 	font-size: 20px;
@@ -70,8 +73,7 @@ h5.contact {
 
 a {
 	text-decoration: none;
-	color: #6FA5DC;
-	font-family: Roboto, sans-serif, 'Josefin Slab', serif, Helvetica;
+	color: #5f4cff;
 	font-weight: 100;	
 	-webkit-transition: all 1s;
 	animation: fadein 5s;
@@ -152,7 +154,6 @@ div#contact_info {
 }
 
 p {
-	font-family: Roboto, sans-serif, 'Josefin Slab', serif, Helvetica;
 	font-weight: 100;	
 	font-size: 20px;
 	padding: 10px;
@@ -243,7 +244,6 @@ h4.skills {
   margin-top: 80px;
   margin-bottom: 60px;
   font-size: 20px;
-  font-family: Roboto;
   padding-right: 125px;
   padding-left: 125px;
   word-spacing: 5px;
@@ -335,7 +335,6 @@ img#simon, #admintracker, #motivate, #blogtest {
     margin-top: 50px;
     margin-bottom: 45px;
     font-size: 40px;
-    font-family: Roboto, sans-serif;
     padding-right: 70px;
     padding-left: 70px;
     font-weight: 100;
@@ -486,7 +485,6 @@ img#simon, #admintracker, #motivate, #blogtest {
     margin-top: 50px;
     margin-bottom: 45px;
     font-size: 40px;
-    font-family: Roboto, sans-serif;
     padding-right: 70px;
     padding-left: 70px;
     font-weight: 100;
