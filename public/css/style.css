@@ -1,9 +1,5 @@
 html { 
-  background: linear-gradient(
-		rgba(0, 0, 0, 0.55),
-		rgba(0, 0, 0, 0.15)
-		), url(../img/nycity.JPG) no-repeat center center fixed;
-  background-size: cover;
+  background: #222;
 }
 
 .hidden {
@@ -59,7 +55,7 @@ h4 {
 h4.projects {
 	color: white;
 	font-size: 35px;
-	margin-top: 100px;
+	margin-top: 350px;
   margin-bottom: 20px;
 }
 
@@ -101,7 +97,6 @@ a#contact_me, #my_projects, #skills {
 
 a#my_projects_two {
 	font-size: 25px;
-	animation: fadein 5s;
 }
 
 a#my_projects_two:hover {
@@ -134,15 +129,11 @@ div#about {
 }
 
 div#languages {
-	background: linear-gradient(
-		rgba(255, 255, 255, 0.7),
-		rgba(255, 255, 255, 0.7)
-		), url(../img/skylineNYC.JPG) center no-repeat;
-	background-color: rgba(99, 146, 255, 0.75);
+	background: white;
 	padding-bottom: 150px;
 	padding-top: 65px;
 	margin-top: 150px;
-  height: 500px;
+  height: 550px;
 }
 
 div#contact_info {
@@ -224,22 +215,19 @@ p.contact {
 
 .wrapping:hover .hover-text {
   opacity: 1;
-  background: rgba(56, 87, 137, 0.9);
+  background: rgba(56, 87, 137, 0.95);
 }
 
 /* End Text on Hover */
 
 h4.skills {
-	line-height: 2em;
-	font-size: 30px;
-  position: absolute;
-  left: 45%;
+  line-height: 2em;
+  font-size: 30px;
   margin-top: -20px;
+  margin-bottom: -20px;
 }
 
 .experience {
-  margin-top: 80px;
-  margin-bottom: 60px;
   font-size: 20px;
   padding-right: 125px;
   padding-left: 125px;
@@ -353,7 +341,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	div#languages {
 		background: #5f4cff;
-    padding-bottom: 2550px;
+    padding-bottom: 3000px;
     padding-top: 200px;
     margin-top: 650px;
 	}
@@ -506,7 +494,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	div#languages {
 		background: #5f4cff;
-    padding-bottom: 2550px;
+    padding-bottom: 3000px;
     padding-top: 200px;
     margin-top: 650px;
 	}
