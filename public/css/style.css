@@ -45,6 +45,10 @@ h1.name {
 	overflow: hidden;
 }
 
+.bio {
+  line-height: 1.5em;
+}
+
 h4 {
 	font-weight: 500;
 	font-size: 20px;
@@ -133,7 +137,7 @@ div#languages {
 	padding-bottom: 150px;
 	padding-top: 65px;
 	margin-top: 150px;
-  height: 550px;
+  height: 650px;
 }
 
 div#contact_info {
@@ -171,7 +175,7 @@ p.contact {
 }
 
 #the-code {
-  margin-top: -35px;
+  margin-top: -20px;
 }
 
 #the-code:hover {
@@ -210,7 +214,7 @@ p.contact {
 }
 
 #title-text {
-  margin-bottom: -25px;
+  margin-bottom: -20px;
 }
 
 .wrapping:hover .hover-text {
@@ -233,6 +237,7 @@ h4.skills {
   padding-left: 125px;
   word-spacing: 5px;
   text-indent: 10px;
+  line-height: 1.5em;
 }
 
 img {
@@ -341,7 +346,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	div#languages {
 		background: #5f4cff;
-    padding-bottom: 3000px;
+    padding-bottom: 3550px;
     padding-top: 200px;
     margin-top: 650px;
 	}
@@ -479,6 +484,10 @@ img#simon, #admintracker, #motivate, #blogtest {
     text-indent: 10px;
   }
 
+  .bio {
+    line-height: 1.2em;
+  }
+
   img#simon, #admintracker, #motivate, #blogtest{
     border-radius: 1%;
     border: none;
@@ -494,7 +503,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	div#languages {
 		background: #5f4cff;
-    padding-bottom: 3000px;
+    padding-bottom: 3550px;
     padding-top: 200px;
     margin-top: 650px;
 	}
