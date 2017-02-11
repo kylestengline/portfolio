@@ -311,8 +311,12 @@ img#simon, #admintracker, #motivate, #blogtest {
 
   .welcome_to, html {
     height: 2000px;
-    background: #222;
+    background: #002366;
     text-align: center;
+  }
+
+  div.welcome_to {
+    margin-top: 200px;
   }
 
   h2#hi, h2#kyle, h2#bid_welcome, h2#developer {
@@ -366,7 +370,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 	}
 
 	h1.name {
-		margin-top: 20px;
+		margin-top: 10px;
 		font-size: 60px;
 	}
 
@@ -441,11 +445,6 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	a#my_projects_two {
     font-size: 40px;
-    color: #49efca;
-  }
-
-  a.pedul {
-    color: #49efca;
   }
 
   a.email, .linkedin, .github, .twitter {
@@ -464,8 +463,12 @@ img#simon, #admintracker, #motivate, #blogtest {
 
   .welcome_to, html {
     height: 2000px;
-    background: #222;
+    background: #002366;
     text-align: center;
+  }
+
+  div.welcome_to {
+    margin-top: 200px;
   }
 
   h2#hi, h2#kyle, h2#bid_welcome, h2#developer {
@@ -511,7 +514,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 	}
 
 	div#languages {
-		background: #5f4cff;
+		background: white;
     padding-bottom: 3550px;
     padding-top: 200px;
     margin-top: 650px;
@@ -523,7 +526,7 @@ img#simon, #admintracker, #motivate, #blogtest {
 	}
 
 	h1.name {
-		margin-top: 20px;
+		margin-top: 10px;
 		font-size: 60px;
 	}
 
@@ -590,11 +593,6 @@ img#simon, #admintracker, #motivate, #blogtest {
 
 	a#my_projects_two {
     font-size: 40px;
-    color: #49efca;
-  }
-
-  a.pedul {
-    color: #49efca;
   }
 
   a#back_to_top {
