@@ -306,158 +306,6 @@ img#simon, #admintracker, #motivate, #blogtest {
 /*MEDIA QUERIES!!!!!*/
 /*###################################################*/
 
-/*iPhone 6*/
-@media screen and (max-width: 800px) {
-
-  .welcome_to, html {
-    height: 2000px;
-    background: #002366;
-    text-align: center;
-  }
-
-  div.welcome_to {
-    margin-top: 150px;
-  }
-
-  h2#hi, h2#kyle, h2#bid_welcome, h2#developer {
-    font-size: 65px;
-    margin-top: 100px;
-    text-decoration: none;
-  }
-
-  h4.skills {
-    line-height: 2em;
-    font-size: 30px;
-    position: absolute;
-    left: 33.7%;
-    margin-top: -100px;
-  }
-
-  .experience {
-    margin-top: 40px;
-    margin-bottom: 45px;
-    font-size: 40px;
-    padding-right: 70px;
-    padding-left: 70px;
-    font-weight: 100;
-    word-spacing: 5px;
-    text-indent: 10px;
-  }
-
-  img#simon, #admintracker, #motivate, #blogtest {
-    border-radius: 1%;
-    border: none;
-    height: 40%;
-    width: 75%;
-    margin-top: 12%;
-  }
-
-	.container {
-		overflow: hidden;
-		padding-left: 20px;
-	}
-
-	div#languages {
-		background: #5f4cff;
-    padding-bottom: 3550px;
-    padding-top: 200px;
-    margin-top: 650px;
-	}
-
-	div#about {
-		padding-right: 50px;
-  	padding-left: 50px;
-	}
-
-	h1.name {
-		margin-top: 10px;
-		font-size: 60px;
-	}
-
-	h3 {
-		font-size: 38px;
-		line-height: 1.2em;
-	}
-
-	h4 {
-		font-size: 45px;
-		padding: 10px;
-	}
-
-	h4.projects {
-   margin-bottom: -20px;
-	 margin-top: 460px;
-	 font-size: 45px;
-	}
-
-	img {
-		max-width: 100%;
-		margin-right: 20px;
-	}
-
-	img#contact_back {
-		border-radius: 0%;
-		max-width: 100%;
-		border: 2px solid black;
-		margin-top: 600px;
-		margin-bottom: 200px;
-		margin-right: 135px;
-		margin-left: 140px;
-	}
-
-	img.email-img, img.twitter-img {
-		height: 140px;
-		width: 140px;
-	}
-
-	img.github-img, .linkedin-img {
-		height: 150px;
-		width: 150px;
-	}
-
-	p {
-		font-size: 35px;
-		font-weight: 100;
-		line-height: 1.2em;
-    padding: 20px;
-	}
-
-	p.contact {
-		font-size: 45px;
-	}
-
-	a#contact {
-		margin: 0 auto;
-    font-size: 45px;
-	}
-
-	a#contact_me, #my_projects, #skills {
-		padding: 5px;
-  }
-
-	a.project, .the_code {
-		font-size: 38px;
-	}
-
-  a#back_to_top {
-    font-size: 40px;
-  }
-
-	a#my_projects_two {
-    font-size: 40px;
-  }
-
-  a.email, .linkedin, .github, .twitter {
-    padding-left: 40px;
-    padding-right: 18px;
-  }
-
-  .wrapping:hover .hover-text {
-    opacity: 0;
-  }
-}
-
-
 /*iPhone 5*/
 @media screen and (max-width: 700px) {
 
@@ -612,4 +460,156 @@ img#simon, #admintracker, #motivate, #blogtest {
     opacity: 0;
   }
 }
+
+/*iPhone 6*/
+@media screen and (max-width: 800px) {
+
+  .welcome_to, html {
+    height: 2000px;
+    background: #002366;
+    text-align: center;
+  }
+
+  div.welcome_to {
+    margin-top: 150px;
+  }
+
+  h2#hi, h2#kyle, h2#bid_welcome, h2#developer {
+    font-size: 65px;
+    margin-top: 100px;
+    text-decoration: none;
+  }
+
+  h4.skills {
+    font-size: 45px;
+    line-height: 2em;
+    position: absolute;
+    left: 33.7%;
+    margin-top: -100px;
+  }
+
+  .experience {
+    margin-top: 40px;
+    margin-bottom: 45px;
+    font-size: 40px;
+    padding-right: 70px;
+    padding-left: 70px;
+    font-weight: 100;
+    word-spacing: 5px;
+    text-indent: 10px;
+  }
+
+  img#simon, #admintracker, #motivate, #blogtest {
+    border-radius: 1%;
+    border: none;
+    height: 40%;
+    width: 75%;
+    margin-top: 12%;
+  }
+
+	.container {
+		overflow: hidden;
+		padding-left: 20px;
+	}
+
+	div#languages {
+    background: white;
+    padding-bottom: 3550px;
+    padding-top: 200px;
+    margin-top: 650px;
+	}
+
+	div#about {
+		padding-right: 50px;
+  	padding-left: 50px;
+	}
+
+	h1.name {
+		margin-top: 10px;
+		font-size: 60px;
+	}
+
+	h3 {
+		font-size: 38px;
+		line-height: 1.2em;
+	}
+
+	h4 {
+		font-size: 45px;
+		padding: 10px;
+	}
+
+	h4.projects {
+   margin-bottom: -20px;
+	 margin-top: 460px;
+	 font-size: 45px;
+	}
+
+	img {
+		max-width: 100%;
+		margin-right: 20px;
+	}
+
+	img#contact_back {
+		border-radius: 0%;
+		max-width: 100%;
+		border: 2px solid black;
+		margin-top: 600px;
+		margin-bottom: 200px;
+		margin-right: 135px;
+		margin-left: 140px;
+	}
+
+	img.email-img, img.twitter-img {
+		height: 140px;
+		width: 140px;
+	}
+
+	img.github-img, .linkedin-img {
+		height: 150px;
+		width: 150px;
+	}
+
+	p {
+		font-size: 35px;
+		font-weight: 100;
+		line-height: 1.2em;
+    padding: 20px;
+	}
+
+	p.contact {
+		font-size: 45px;
+	}
+
+	a#contact {
+		margin: 0 auto;
+    font-size: 45px;
+	}
+
+	a#contact_me, #my_projects, #skills {
+		padding: 0px;
+  }
+
+	a.project, .the_code {
+		font-size: 38px;
+	}
+
+  a#back_to_top {
+    font-size: 40px;
+  }
+
+	a#my_projects_two {
+    font-size: 40px;
+  }
+
+  a.email, .linkedin, .github, .twitter {
+    padding-left: 40px;
+    padding-right: 18px;
+  }
+
+  .wrapping:hover .hover-text {
+    opacity: 0;
+  }
+}
+
 
