@@ -166,7 +166,7 @@ p.contact {
 }
 
 /* Show Text on Hover */
-#one, #two, #three, #four {
+#one, #two, #three, #four, #five {
   position: relative;
   margin-bottom: 5%;
 }
@@ -277,7 +277,7 @@ img#contact_back {
 	margin-left: 140px;
 }
 
-img#simon, #admintracker, #motivate, #blogtest { 
+img#simon, #admintracker, #motivate, #blogtest, #scripts { 
   border-radius: 1%;
   border: none;
   height: 40%;
@@ -348,7 +348,7 @@ img#simon, #admintracker, #motivate, #blogtest {
     line-height: 1.2em;
   }
 
-  img#simon, #admintracker, #motivate, #blogtest{
+  img#simon, #admintracker, #motivate, #blogtest, #scripts {
     border-radius: 1%;
     border: none;
     height: 40%;
@@ -499,7 +499,7 @@ img#simon, #admintracker, #motivate, #blogtest {
     text-indent: 10px;
   }
 
-  img#simon, #admintracker, #motivate, #blogtest {
+  img#simon, #admintracker, #motivate, #blogtest, #scripts {
     border-radius: 1%;
     border: none;
     height: 40%;
