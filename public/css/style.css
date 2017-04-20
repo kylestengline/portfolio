@@ -306,15 +306,6 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
 /*MEDIA QUERIES!!!!!*/
 /*###################################################*/
 
-/*iPhone 5*/
-@media screen and (min-width: 300px) {
-
-  div#about {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-}
-
 /*iPhone 6*/
 @media screen and (max-width: 800px) {
 
