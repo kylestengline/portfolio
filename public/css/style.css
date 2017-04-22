@@ -143,10 +143,9 @@ div#about {
 
 div#languages {
 	background: white;
-	padding-bottom: 150px;
 	padding-top: 65px;
 	margin-top: 150px;
-  height: 775px;
+  height: 925px;
 }
 
 div#contact_info {
@@ -359,9 +358,9 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
 
 	div#languages {
     background: white;
-    padding-bottom: 4200px;
     padding-top: 200px;
     margin-top: 650px;
+    height: 5000px;
 	}
 
 	div#about {
@@ -460,9 +459,9 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
 @media screen and (max-width: 1100px) {
 	div#languages {
 		background: white;
-    padding-bottom: 4200px;
     padding-top: 200px;
     margin-top: 650px;
+    height: 5000px;
 	}
 }
 

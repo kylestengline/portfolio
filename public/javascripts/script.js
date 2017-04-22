@@ -108,5 +108,6 @@ $(document).ready(function() {
 		scrollToTop('top');
     return false;
 	})
+
 });
 
