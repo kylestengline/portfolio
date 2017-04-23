@@ -45,7 +45,7 @@ $(document).ready(function() {
     }, 4800);
   }) 
 
-  ////fade out welcome_div and fade in body////
+  //fade out welcome_div and fade in body//
   setTimeout(function(){
     welcome_div.fadeOut(2400);
     body.fadeIn(2900);
@@ -74,12 +74,6 @@ $(document).ready(function() {
 		scrollToProjects('projects');
     return false;
 	}) 
-
-	$("#my_projects_two").click(function() {
-		scrollToProjects('projects');
-    return false;
-	}) 
-
 
 	// Scrolls to the contact area
 	var	scrollToContact = function(contact) {
@@ -110,4 +104,3 @@ $(document).ready(function() {
 	})
 
 });
-

@@ -98,16 +98,6 @@ a#contact_me, #my_projects, #skills {
 	padding: 35px;
 }
 
-a#my_projects_two {
-	font-size: 25px;
-  color: #41b9e1;
-}
-
-a#my_projects_two:hover {
-	-webkit-transition: all 1s;
-	color: #e1b941;
-}
-
 a.project {
 	font-size: 20px;
 	color: rgb(47, 254, 238);
@@ -145,7 +135,7 @@ div#languages {
 	background: white;
 	padding-top: 65px;
 	margin-top: 150px;
-  height: 925px;
+  height: 900px;
 }
 
 div#contact_info {
@@ -360,7 +350,7 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
     background: white;
     padding-top: 200px;
     margin-top: 650px;
-    height: 5000px;
+    height: 4825px;
 	}
 
 	div#about {
@@ -442,10 +432,6 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
     font-size: 40px;
   }
 
-	a#my_projects_two {
-    font-size: 40px;
-  }
-
   a.email, .linkedin, .github, .twitter {
     padding-left: 40px;
     padding-right: 18px;
@@ -461,7 +447,7 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
 		background: white;
     padding-top: 200px;
     margin-top: 650px;
-    height: 5000px;
+    height: 4825px;
 	}
 }
 
