@@ -432,11 +432,6 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
     font-size: 40px;
   }
 
-  a.email, .linkedin, .github, .twitter {
-    padding-left: 40px;
-    padding-right: 18px;
-  }
-
   .wrapping:hover .hover-text {
     opacity: 0;
   }
