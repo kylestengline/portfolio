@@ -116,7 +116,7 @@ a.email, .linkedin, .github, .twitter {
 	color: black;
 }
 
-a.pedul {
+a.pedul, a.resume {
   color: #41b9e1;
 }
 
@@ -349,7 +349,7 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
 	div#languages {
     background: white;
     padding-top: 200px;
-    margin-top: 650px;
+    margin-top: 100px;
     height: 4825px;
 	}
 
@@ -375,7 +375,7 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
 
 	h4.projects {
    margin-bottom: -20px;
-	 margin-top: 460px;
+	 margin-top: 300px;
 	 font-size: 45px;
 	}
 
@@ -415,13 +415,18 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
 		font-size: 45px;
 	}
 
+  p#to_top {
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+
 	a#contact {
 		margin: 0 auto;
     font-size: 45px;
 	}
 
 	a#contact_me, #my_projects, #skills {
-		padding: 5px;
+		padding: 6.5px;
   }
 
 	a.project, .the_code {
@@ -441,8 +446,8 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
 	div#languages {
 		background: white;
     padding-top: 200px;
-    margin-top: 650px;
-    height: 4825px;
+    margin-top: 100px;
+    height: 5000px;
 	}
 }
 
