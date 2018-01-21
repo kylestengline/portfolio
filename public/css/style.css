@@ -155,7 +155,7 @@ p.contact {
 }
 
 /* Show Text on Hover */
-#one, #two, #three, #four, #five {
+#one, #two, #three {
   position: relative;
   margin-bottom: 5%;
 }
@@ -266,7 +266,7 @@ img#contact_back {
 	margin-left: 140px;
 }
 
-img#simon, #admintracker, #motivate, #blogtest, #scripts { 
+img#scripts, #dogseekers, #themiddle { 
   border-radius: 1%;
   border: none;
   height: 40%;
@@ -333,7 +333,7 @@ img#simon, #admintracker, #motivate, #blogtest, #scripts {
     text-indent: 10px;
   }
 
-  img#simon, #admintracker, #motivate, #blogtest, #scripts {
+  img#scripts, #dogseekers, #themiddle {
     border-radius: 1%;
     border: none;
     height: 40%;
