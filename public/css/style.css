@@ -2,21 +2,30 @@ html {
   background: #002366;
 }
 
-.hidden {
+body {
+  width: 12000px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+/*.hidden {
   display: none;
 }
 
 .welcome_to {
   height: 2000px;
   background:  rgba(0, 0, 0, 0.01);
-  text-align: center;
+  float: left;
+  margin-left: 400px;
 }
 
-h2#hi, h2#kyle, h2#bid_welcome, h2#developer {
+#hi, #kyle, #bid_welcome, #developer {
   font-size: 50px;
   margin-top: 65px;
   text-decoration: none;
-}
+}*/
 
 /* FONTS */
 h1, h2, h3, h4, h5, 
@@ -34,10 +43,17 @@ h1, h2, h3 {
 
 h1.name {
 	font-size: 55px;
-	margin-top: 65px;
+	margin-top: 35px;
 	color: white;
 	animation-duration: 2s;
 	animation-name: slideInSmooth;
+}
+
+#about_section {
+  margin: 0px;
+  bottom: 0px;
+  width: 1425px;
+  float: left;
 }
 
 .container {
@@ -62,12 +78,6 @@ h4.projects {
   margin-bottom: 20px;
 }
 
-h5.contact {
-	font-weight: 200;
-	color: white;
-	font-size: 20px;
-}
-
 a {
 	text-decoration: none;
 	color: #e1b941;
@@ -79,23 +89,12 @@ a {
 a:hover {
 	-webkit-transition: all 1s;
 	color: #41b9e1;
-}
-
-a#contact {
-	font-size: 25px;
-	color: #6FA5DC;
-	margin: 0 auto;
-	display: inline-block;
-}
-
-a#contact:hover {
 	cursor: pointer;
-	-webkit-transition: all 1s;
-	color: #ff0000;
 }
 
-a#contact_me, #my_projects, #skills {
-	padding: 35px;
+#my_projects {
+  text-decoration: underline;
+  padding-right: 15px;
 }
 
 a.project {
@@ -108,39 +107,17 @@ a.project:hover {
 	color: #3B91E8;
 }
 
-a.email, .linkedin, .github, .twitter {
+a.email, .linkedin, .github {
 	padding-top: 10px;
 	display: inline-block;
-	padding-left: 5px;
-	padding-right: 5px; 
-	color: black;
-}
-
-a.pedul, a.resume {
-  color: #41b9e1;
-}
-
-a.pedul:hover {
-	-webkit-transition: all 1s;
-	color: #e1b941;
+	padding-left: 15px;
+	padding-right: 15px; 
+  text-decoration: underline;
 }
 
 div#about {
 	padding-right: 200px;
   padding-left: 200px;
-	padding-bottom: 200px;
-}
-
-div#languages {
-	background: white;
-	padding-top: 65px;
-	margin-top: 150px;
-  height: 1000px;
-}
-
-div#contact_info {
-	background-color: white;
-	margin-top: 500px;
 }
 
 p {
@@ -150,14 +127,17 @@ p {
 }
 
 p.contact {
-	text-align: center;
 	font-size: 25px;
+  color: white;
 }
 
 /* Show Text on Hover */
 #one, #two, #three {
-  position: relative;
-  margin-bottom: 5%;
+  padding: 0 500px 0 500px;
+  margin: 0px;
+  bottom: 0px;
+  width: 1425px;
+  float: left;
 }
 
 .wrapping {
@@ -187,19 +167,21 @@ p.contact {
 
 .text-display {
   font-size: 30px;
-  z-index: 100;
   color: black;
   font-weight: 100;
+  padding-top: 40px;
+  line-height: 1.5em;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
-.hover-text {
-  opacity: 0;
+div.hover-text {
   position: absolute;
-  top: 0;
-  left: 25%;
-  height: 99%;
-  width: 50%;
-  border-radius: 5px;
+  opacity: 0;
+  top: 0%;
+  height: 100.5%;
+  width: 11.9%;
+  bottom: 0%;
   background: rgba(64,185,225, 0.9);
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -213,6 +195,7 @@ p.contact {
 
 #title-text {
   margin-bottom: -20px;
+  margin-top: 10%;
 }
 
 .wrapping:hover .hover-text {
@@ -244,33 +227,15 @@ img {
 	border: 3.2px solid white;
 }
 
-img.email-img, img.twitter-img {
-	border-radius: 0%;
-	height: 70px;
-	width: 70px;
-  margin-bottom: 2px;
+img#scripts {
+  height: 765px;
 }
 
-img.github-img, .linkedin-img {
-	border-radius: 0%;
-	height: 75px;
-	width: 75px;
-}
-
-img#contact_back {
-	border-radius: 0%;
-	max-width: 100%;
-	border: 2px solid black;
-	margin-top: 400px;
-	margin-right: 135px;
-	margin-left: 140px;
-}
-
-img#scripts, #dogseekers, #themiddle { 
-  border-radius: 1%;
+#scripts, #dogseekers, #themiddle { 
+  border-radius: 0%;
   border: none;
-  height: 40%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   display: inline-block;
 }
 
