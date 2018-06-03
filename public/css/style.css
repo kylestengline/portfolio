@@ -169,8 +169,8 @@ p.contact {
   font-size: 30px;
   color: black;
   font-weight: 100;
-  padding-top: 40px;
-  line-height: 1.5em;
+  padding-top: 10px;
+  line-height: 1.4em;
   padding-left: 200px;
   padding-right: 200px;
 }
@@ -195,7 +195,7 @@ div.hover-text {
 
 #title-text {
   margin-bottom: -20px;
-  margin-top: 10%;
+  margin-top: 2%;
 }
 
 .wrapping:hover .hover-text {
