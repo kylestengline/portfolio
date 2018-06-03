@@ -2,30 +2,20 @@ html {
   background: #002366;
 }
 
-body {
-  width: 12000px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-}
-
-/*.hidden {
+.hidden {
   display: none;
 }
 
 .welcome_to {
   height: 2000px;
   background:  rgba(0, 0, 0, 0.01);
-  float: left;
-  margin-left: 400px;
 }
 
 #hi, #kyle, #bid_welcome, #developer {
   font-size: 50px;
   margin-top: 65px;
   text-decoration: none;
-}*/
+}
 
 /* FONTS */
 h1, h2, h3, h4, h5, 
@@ -80,21 +70,36 @@ h4.projects {
 
 a {
 	text-decoration: none;
+  position: relative;
 	color: #e1b941;
 	font-weight: 100;	
 	-webkit-transition: all 1s;
-	animation: fadein 5s;
+	animation: fadein 2s;
 }
 
 a:hover {
-	-webkit-transition: all 1s;
-	color: #41b9e1;
 	cursor: pointer;
 }
 
-#my_projects {
-  text-decoration: underline;
-  padding-right: 15px;
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e1b941;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 a.project {
@@ -107,12 +112,12 @@ a.project:hover {
 	color: #3B91E8;
 }
 
-a.email, .linkedin, .github {
+.email, .linkedin, .github, 
+.resume, #my_projects {
 	padding-top: 10px;
 	display: inline-block;
 	padding-left: 15px;
 	padding-right: 15px; 
-  text-decoration: underline;
 }
 
 div#about {
@@ -129,6 +134,30 @@ p {
 p.contact {
 	font-size: 25px;
   color: white;
+}
+
+/* Dropdown menu styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-content a {
+  display: inline-block; 
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.show {
+  display: block;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  margin-top: 1%;
+}
+
+.project-heading {
+  font-size: 24px;
+  padding: 0px;
 }
 
 /* Show Text on Hover */
@@ -148,16 +177,8 @@ p.contact {
   margin-top: -30px;
 }
 
-#code:hover {
-  text-decoration: underline;
-}
-
 #the-code {
   margin-top: -20px;
-}
-
-#the-code:hover {
-  text-decoration: underline;
 }
 
 .text-display a {
@@ -210,15 +231,6 @@ h4.skills {
   font-size: 30px;
   margin-top: -20px;
   margin-bottom: -20px;
-}
-
-.experience {
-  font-size: 20px;
-  padding-right: 125px;
-  padding-left: 125px;
-  word-spacing: 5px;
-  text-indent: 10px;
-  line-height: 1.5em;
 }
 
 img {

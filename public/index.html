@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name=viewport content="width=700">
-    <meta name="description" content="Kyle Stengline's Software Engineer Portfolio Site"/>
+    <meta name="description" content="Kyle Stengline's Software Engineer Portfolio"/>
     <meta name="robots" content="index,follow"/>
     <title>Kyle Stengline</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
@@ -17,14 +17,14 @@
     <script src="javascripts/jquery-2.2.2.min.js"></script>
   </head>
 
- <!-- <div class="welcome_to">
+  <div class="welcome_to">
     <center>
       <h2 class="hidden" id="hi">Hi</h2>
       <h2 class="hidden" id="kyle">My name is Kyle</h2>
       <h2 class="hidden" id="developer">I'm a Software Engineer</h2>
       <h2 class="hidden" id="bid_welcome">Welcome to my site</h2>
     </center>
- </div> -->
+  </div>
   <body>
     <center>
       <div id="about_section">
@@ -34,73 +34,20 @@
         <img id="me" src="img/profile_image.jpg" alt="profile pic" height="230" width="230">
         <div id="about">
           <h3 class="bio">
-            Hey! Thanks for visiting. I'm a software engineer based out of San Diego. I’m learning Kung Fu and have been practicing everyday for the past 4.5 years. I enjoy exploring San Diego as well as taking small trips up and down the California coast. I play guitar from time to time, I can juggle and I know how to sail! If you want to hear more, get in touch, I’d be happy to share some stories and talk code.
+            Hey friend! Pleased to make your acquaintance. I'm a software engineer based out of San Diego. I’m also learning Kung Fu and practice everyday. I enjoy exploring San Diego as well as taking small trips up and down the California coast. I play guitar from time to time, I can juggle and I know how to sail! If you want to hear more, get in touch, I’d be happy to share some stories and talk code. Cheers!
             <br/> <br/>
-            <a id="my_projects" href="#scripts">Portfolio</a> |
+            <a id="my_projects" href="#">Portfolio</a> |
+            <div id="projects" class="dropdown-content">
+              <h4 class="project-heading">My Projects</h4>
+              <a class="scripts" href="https://github.com/kylestengline/scripts" target="_blank">My Scripts</a> |
+              <a class="dogseekers" href="https://dogseekers.herokuapp.com/" target="_blank">Dog Seekers</a> |
+              <a class="blog" href="https://inthemiddle.herokuapp.com/" target="_blank">My Personal Blog</a>
+            </div>
             <a class="email" href="mailto:kyle.stengline@gmail.com">Email</a> | 
             <a class="github" href="https://github.com/kylestengline/" target="_blank">Github</a> |
-            <a class="linkedin" href="https://www.linkedin.com/in/kylestengline/" target="_blank">LinkedIn</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/kylestengline/" target="_blank">LinkedIn</a> |
+            <a class="resume" href="https://drive.google.com/file/d/1VbShmgJwnokLobwg_857Y-pKb9dPz7Ei/view" target="_blank">Resume</a>
           </h3>
-        </div>
-      </div>
-    </center>
-    <center>
-      <div id="projects">
-        <div id="one">
-          <div class="wrapping">
-            <a class="project" href="https://github.com/kylestengline/scripts" target="_blank">
-              <img id="scripts" src="img/scripts.png" alt="blog" height="200" width="300">
-              <div class="hover-text">
-                <p class="text-display" id="title-text">
-                  My Scripts 
-                </p>
-                <p class="text-display">
-                  This repo contains some nice little scripts I wrote to speed up production. Have a look and try them yourself.
-                  <p class="text-display" id="code">
-                    <a href="https://github.com/kylestengline/scripts" target="_blank">The Code</a>
-                  </p>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div id="two">
-          <div class="wrapping">
-            <a class="project" href="https://dogseekers.herokuapp.com/" target="_blank">
-              <img id="dogseekers" src="img/dogseekers.png" alt="dogseekers" height="200" width="300">
-              <div class="hover-text">
-                <p class="text-display" id="title-text">
-                  Dog Seekers 
-                </p>
-                <p class="text-display">
-                  I built this app because I was going through a creative dry spell. I knew I wanted to build something, but wasn't sure what to build. I figured, I like dogs and Petfinder is a pretty cool site, so why not build a similar site, but just for dogs? Out came Dog Seekers. I built Dog Seekers to prove to myself that I was capable of building a large scale project with only the help of Google. In the past, I've implemented features to large projects, but never built an entire large scale project; top-to-bottom. If you're reading this, then I've accomplished exactly what I set out to do. There's still A LOT of work to do, but I've simply come to terms with the fact that I'm going to be working on this for a while. To me, no project is really "finished", because there's always work to be done. Quick sidebar, I had a security team test this app and they confirmed it is up to OWASP Standards.
-                  <p class="text-display" id="code">
-                    <a href="https://github.com/kylestengline/pet-finder-mock-up" target="_blank">The Code</a>
-                  </p>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div id="three">
-          <div class="wrapping">
-            <a class="project" href="https://inthemiddle.herokuapp.com/" target="_blank">
-              <img id="themiddle" src="img/inthemiddle.png" alt="myblog" height="200" width="300">
-              <div class="hover-text">
-                <p class="text-display" id="title-text">
-                  My Personal Blog 
-                </p>
-                <p class="text-display">
-                  My personal blog where I share code and general life posts. I'm very proud of this application. When I build a new web app, I implement something I haven't done before. This implementation could be anything from trying out a new ruby gem to a cool ruby/rails method I discovered. In building this blog, I played around with a few gems I found as well as some new ruby methods. I had some fun implementing the ability to write my posts in Markdown format with the Redcarpet and Coderay gems. This was probably one of the most fun apps I've built. I enjoyed its simplicity and playing around with the code and gems. A quick sidebar, I had a security team test this app to ensure it's up to OWASP Standards...yes, it passed.
-                  <p class="text-display" id="code">
-                    <a href="https://github.com/kylestengline/my_blog" target="_blank">The Code</a>
-                  </p>
-                </p>
-              </div>
-            </a>
-          </div>
         </div>
       </div>
     </center>
