@@ -160,6 +160,11 @@ p.contact {
   padding: 0px;
 }
 
+.show-code a {
+  position: relative;
+  display: inline-block;
+}
+
 /* Show Text on Hover */
 #one, #two, #three {
   padding: 0 500px 0 500px;
