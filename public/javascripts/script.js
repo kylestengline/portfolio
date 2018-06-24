@@ -51,8 +51,11 @@ $(document).ready(function() {
     body.fadeIn(2900);
   }, 5400);
 
-  //Open Projects dropdown
+  //Open projects dropdown and scroll to them
   $("#my_projects").click(function(){
     $(".dropdown-content").toggleClass("show");
+    setTimeout(function(){
+      $("html, body").animate({ scrollTop: document.body.scrollHeight} , 1000);
+    }, 100)
   })
 });

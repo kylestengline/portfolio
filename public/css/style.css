@@ -316,10 +316,6 @@ img {
 	border: 3.2px solid white;
 }
 
-/*img#scripts {
-  height: 200px;
-}*/
-
 #scripts, #dogseekers, #themiddle { 
   border-radius: 0%;
   border: none;
@@ -344,10 +340,4 @@ img {
 @keyframes fadein {
 	from { opacity: 0; }
 	to { opacity: 1;	}
-}
-
-
-@keyframes fadeout {
-	from { opacity: 1; }
-	to { opacity: 0;	}
 }
