@@ -42,8 +42,6 @@ h1.name {
 #about_section {
   margin: 0px;
   bottom: 0px;
-  width: 1425px;
-  float: left;
 }
 
 .container {
@@ -152,16 +150,18 @@ p.contact {
 
 .show {
   display: block;
-  margin-left: 17.5%;
-  margin-right: 17.5%;
+  margin-left: 5.5%;
+  margin-right: 5.5%;
   margin-bottom: 5%;
   margin-top: 1%;
   color: white;
+  animation: fadein 2s;
 }
 
 .project-heading {
   font-size: 24px;
   padding: 0px;
+  margin-bottom: 15px;
 }
 
 .show-code a {
@@ -241,10 +241,8 @@ p.contact {
 
 /* Show Text on Hover */
 #one, #two, #three {
-  padding: 0 500px 0 500px;
   margin: 0px;
   bottom: 0px;
-  width: 1425px;
   float: left;
 }
 
@@ -318,15 +316,16 @@ img {
 	border: 3.2px solid white;
 }
 
-img#scripts {
-  height: 765px;
-}
+/*img#scripts {
+  height: 200px;
+}*/
 
 #scripts, #dogseekers, #themiddle { 
   border-radius: 0%;
   border: none;
-  height: 100%;
-  width: 100%;
+  margin-top: -20px;
+  height: 125px;
+  width: 250px;
   display: inline-block;
 }
 
@@ -345,4 +344,10 @@ img#scripts {
 @keyframes fadein {
 	from { opacity: 0; }
 	to { opacity: 1;	}
+}
+
+
+@keyframes fadeout {
+	from { opacity: 1; }
+	to { opacity: 0;	}
 }
