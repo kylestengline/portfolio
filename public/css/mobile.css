@@ -2,7 +2,7 @@
 @media screen and (max-width: 800px) {
 
   .welcome_to, html {
-    height: 2000px;
+    height: 1450px;
     background: #002366;
     text-align: center;
   }
@@ -25,23 +25,12 @@
     margin-top: -100px;
   }
 
-  .experience {
-    margin-top: 40px;
-    margin-bottom: 45px;
-    font-size: 40px;
-    padding-right: 35px;
-    padding-left: 35px;
-    font-weight: 100;
-    word-spacing: 5px;
-    text-indent: 10px;
-  }
-
   img#scripts, #dogseekers, #themiddle {
     border-radius: 1%;
     border: none;
     height: 40%;
     width: 75%;
-    margin-top: 12%;
+    margin-bottom: 10%;
   }
 
 	.container {
@@ -49,16 +38,10 @@
 		padding-left: 20px;
 	}
 
-	div#languages {
-    background: white;
-    padding-top: 200px;
-    margin-top: 100px;
-    height: 4825px;
-	}
-
 	div#about {
 		padding-right: 20px;
   	padding-left: 20px;
+    margin-bottom: 50px;
 	}
 
 	h1.name {
@@ -72,7 +55,7 @@
 	}
 
 	h4 {
-		font-size: 45px;
+		font-size: 35px;
 		padding: 10px;
 	}
 
@@ -97,16 +80,6 @@
 		margin-left: 140px;
 	}
 
-	img.email-img, img.twitter-img {
-		height: 140px;
-		width: 140px;
-	}
-
-	img.github-img, .linkedin-img {
-		height: 150px;
-		width: 150px;
-	}
-
 	p {
 		font-size: 35px;
 		font-weight: 100;
@@ -114,43 +87,27 @@
     padding: 20px;
 	}
 
-	p.contact {
-		font-size: 45px;
-	}
-
-  p#to_top {
-    margin-bottom: 20px;
-    margin-top: -20px;
-    margin-right: 10px;
+	.email, .github, .linkedin, 
+  .resume, #my_projects {
+    padding-right: 25px;
+    padding-left: 25px;
+    line-height: 1.8em;
+    font-size: 38px;
   }
 
-	a#contact {
-		margin: 0 auto;
-    font-size: 45px;
-	}
-
-	a#contact_me, #my_projects, #skills {
-		padding: 6.5px;
+  .show {
+    margin-top: 15%;
+  }
+  
+  h4.project-heading {
+    font-size: 38px;
   }
 
 	a.project, .the_code {
-		font-size: 38px;
+		font-size: 35px;
 	}
-
-  a#back_to_top {
-    font-size: 40px;
-  }
 
   .wrapping:hover .hover-text {
     opacity: 0;
   }
-}
-
-@media screen and (max-width: 1100px) {
-	div#languages {
-		background: white;
-    padding-top: 200px;
-    margin-top: 100px;
-    height: 5000px;
-	}
 }
