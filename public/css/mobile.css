@@ -1,9 +1,10 @@
 /*iPhone 6*/
-@media screen and (max-width: 800px) {
+@media only screen and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
 
   .welcome_to, html {
     height: 1450px;
-    background: #002366;
     text-align: center;
   }
 
@@ -28,8 +29,8 @@
   img#scripts, #dogseekers, #themiddle {
     border-radius: 1%;
     border: none;
-    height: 40%;
-    width: 75%;
+    height: 100%;
+    width: 100%;
     margin-bottom: 10%;
   }
 
@@ -109,5 +110,9 @@
 
   .wrapping:hover .hover-text {
     opacity: 0;
+  }
+
+  .projects-and-contact {
+    margin-top: -75px;
   }
 }
