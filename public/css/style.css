@@ -33,7 +33,7 @@ h1, h2, h3 {
 
 h1.name {
 	font-size: 55px;
-	margin-top: 70px;
+	margin-top: 60px;
 	color: white;
 	animation-duration: 2s;
 	animation-name: slideInSmooth;
@@ -148,17 +148,18 @@ p.contact {
 
 .show {
   display: block;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 5%;
+  width: 845px;
+  left: 16.5%;
+  right: 16.5%;
   margin-top: 1%;
   color: white;
   animation: fadein 2s;
+  margin-bottom: 5%;
+  margin: 0 auto;
 }
 
 #projects {
-  left: 8px;
-  right: 8px;
+  margin-bottom: 5%;
 }
 
 .project-heading {

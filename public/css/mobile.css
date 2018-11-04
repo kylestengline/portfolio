@@ -98,6 +98,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .show {
     margin-top: 15%;
+    width: 375px;
   }
   
   h4.project-heading {
