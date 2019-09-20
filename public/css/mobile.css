@@ -36,7 +36,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 	.container {
 		overflow: hidden;
-		padding-left: 20px;
 	}
 
 	div#about {
@@ -68,7 +67,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 	img {
 		max-width: 100%;
-		margin-right: 20px;
 	}
 
 	img#contact_back {
