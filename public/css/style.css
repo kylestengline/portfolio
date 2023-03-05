@@ -33,7 +33,7 @@ h1, h2, h3 {
 
 h1.name {
 	font-size: 55px;
-	margin-top: 60px;
+	margin-top: 25px;
 	color: white;
 	animation-duration: 2s;
 	animation-name: slideInSmooth;
