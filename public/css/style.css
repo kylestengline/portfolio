@@ -570,7 +570,8 @@ section {
 
 /* === CONTACT === */
 #contact {
-  background: var(--surface);
+ /* background: var(--surface); */
+  background: var(--bg);
 }
 
 .contact-inner {
