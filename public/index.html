@@ -1,81 +1,298 @@
 <!DOCTYPE html>
-<html>
-  <a name="top"></a> 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name=viewport content="width=700">
-    <meta name="description" content="Kyle Stengline's Software Engineer Portfolio"/>
-    <meta name="robots" content="index,follow"/>
-    <title>Kyle Stengline</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Quicksand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script src="javascripts/jquery-2.2.2.min.js"></script>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kyle Stengline — Senior ServiceNow Developer (CSA, CIS-ITSM) specializing in Service Portals, Flow Designer, and enterprise platform integrations.">
+  <meta name="robots" content="index,follow">
+  <title>Kyle Stengline — Senior ServiceNow Developer | CSA · CIS-ITSM</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-  <div class="welcome_to">
-    <center>
-      <h2 class="hidden" id="hi">Hi</h2>
-      <h2 class="hidden" id="kyle">I'm Kyle</h2>
-      <h2 class="hidden" id="developer">A ServiceNow Developer</h2>
-      <h2 class="hidden" id="bid_welcome">Welcome to my site</h2>
-    </center>
+  <div id="intro-overlay">
+    <div class="intro-content">
+      <p id="intro-line1"></p>
+      <p id="intro-line2"></p>
+      <p id="intro-line3"></p>
+    </div>
+    <p class="intro-skip">click anywhere to skip</p>
   </div>
-  <body>
-    <center>
-      <div id="about_section">
-        <div class="container">
-          <h1 class="name">Kyle Stengline</h1>
-        </div>
-        <img id="me" src="img/new_profile.jpg" alt="profile pic" height="250" width="350">
-        <div id="about"> 
-          <h3 class="bio">
-            Hey! How are you?<br/> Thanks for visiting. I've lived in San Diego working as a ServiceNow Developer since March of 2017. While here, I learned Kung Fu, Krav Maga, took sailing lessons, figured out my Rubiks cube and traveled to other countries - I highly recommend Santorini and Naxos. I play guitar, but have a "will they, won't they" kind of relationship. I can juggle and entertain the neighbors. I enjoyed taking voice acting classes, using my funny voices and accents to prank interviewers, friends and family. After traveling through 46 states and living in 4, I'm happy to call San Diego home...for now.
-          </h3>
-          <br/>
-        </div>
-        <div class="projects-and-contact">
-          <a id="my_projects" href="#">Portfolio</a> |
-          <div id="projects" class="dropdown-content">
-            <h4 class="project-heading">My Projects</h4>
-            <div id="one">
-              <div class="wrapping">
-                <h4>Some Scripts I Wrote<br/></h4>
-                <a class="project" href="https://github.com/kylestengline/scripts" target="_blank">
-                  <img id="scripts" src="img/scripts.png" alt="blog" height="100" width="200">
-                </a>
-              </div>
-            </div>
 
-            <div id="two">
-              <div class="wrapping">
-                <h4>Dog Seeker Web App<br/></h4>
-                <a class="project" href="https://github.com/kylestengline/pet-finder-mock-up" target="_blank">
-                  <img id="dogseekers" src="img/dogseekers.png" alt="dogseekers" height="100" width="200">
-                </a>
-              </div>
-            </div>
+  <nav id="nav">
+    <span class="nav-logo">Kyle Stengline</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-            <div id="three">
-              <div class="wrapping">
-                <h4>My Personal Blog<br/></h4>
-                <a class="project" href="https://github.com/kylestengline/my_blog" target="_blank">
-                  <img id="themiddle" src="img/inthemiddle.png" alt="myblog" height="100" width="200">
-                </a>
-              </div>
-            </div>
-          </div>
-          <a class="email" href="mailto:kyle.stengline@gmail.com">Email</a> | 
-          <a class="github" href="https://github.com/kylestengline/" target="_blank">GitHub</a> |
-          <a class="linkedin" href="https://www.linkedin.com/in/kylestengline/" target="_blank">LinkedIn</a> |
-          <a class="resume" href="https://docs.google.com/document/d/1LClxingP5vlBexmpfa4CmCt3_8svrU8zPREC_xvC7y4/edit?usp=sharing" target="_blank">Resume</a>
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1>Kyle Stengline</h1>
+      <h2>Senior ServiceNow Developer</h2>
+      <div class="hero-certs">
+        <span>CSA</span>
+        <span>CIS-ITSM</span>
+      </div>
+      <p class="hero-sub">Building enterprise ITSM solutions on the Now Platform since March 2017.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="KyleStengline.pdf" target="_blank" class="btn btn-secondary">View Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-label">About</p>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="img/new_profile.jpg" alt="Kyle Stengline">
+        </div>
+        <div class="about-text">
+          <p class="about-summary">
+            I'm a certified Senior ServiceNow Developer (CSA &middot; CIS-ITSM) building enterprise ITSM solutions since March 2017, across financial services, insurance, aerospace, and consulting. I've held senior engineering roles at ServiceNow itself, ManTech supporting NASA's Jet Propulsion Laboratory, and currently at NewRocket — where I architect Service Portal experiences for clients across CSM and ITSM. My focus is on Service Portal, Flow Designer, platform integrations, and full-cycle automation. I also integrate AI-assisted development using Claude Code and prompt engineering, consistently delivering faster and higher-quality results.
+          </p>
+          <p class="about-personal">
+            On a personal note, I live in San Diego, where I've learned Kung Fu, Krav Maga, sailing, and voice acting. I can also juggle - yes, really. I've traveled through 46 states and 5 countries - I highly recommend Santorini and Naxos. From time to time, I play guitar - not enough to go pro, but just enough to say I play.
+          </p>
         </div>
       </div>
-    </center>
-  </body>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-label">Skills</p>
+      <div class="skills-groups">
+
+        <div class="skills-group">
+          <p class="skills-group-title">Now Platform</p>
+          <ul class="skills-list">
+            <li>Flow Designer</li>
+            <li>Service Portals</li>
+            <li>Widgets</li>
+            <li>Business Rules</li>
+            <li>Client Scripts</li>
+            <li>Script Includes</li>
+            <li>Scheduled Jobs</li>
+            <li>Fix Scripts</li>
+            <li>UI Policies</li>
+            <li>UI Actions</li>
+            <li>Inbound Actions</li>
+            <li>ACLs &amp; User Criteria</li>
+            <li>Record Producers</li>
+            <li>Transform Maps</li>
+            <li>Update Set Mgmt</li>
+            <li>Asset Management</li>
+            <li>Task Management</li>
+            <li>Notifications</li>
+            <li>Email Scripts</li>
+            <li>Event Registry</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <p class="skills-group-title">Integrations &amp; Development</p>
+          <ul class="skills-list">
+            <li>REST APIs</li>
+            <li>IntegrationHub</li>
+            <li>Scripted REST APIs</li>
+            <li>JavaScript</li>
+            <li>Glide APIs</li>
+            <li>HTML / CSS</li>
+            <li>Prompt Engineering</li>
+            <li>Claude Code</li>
+            <li>Git</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="certs-row">
+        <p class="skills-group-title">Certifications</p>
+        <ul class="skills-list certs-list">
+          <li>CSA &mdash; Certified System Administrator</li>
+          <li>CIS-ITSM &mdash; Certified Implementation Specialist</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-inner">
+      <p class="section-label">Experience</p>
+      <div class="experience-list">
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-company">NewRocket</h3>
+              <p class="exp-role">Senior Software Engineer</p>
+            </div>
+            <span class="exp-dates">Apr 2025 &ndash; Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Architect and deliver Service Portal experiences for enterprise clients across CSM and ITSM use cases</li>
+            <li>Leveraged Claude Code and prompt engineering to achieve a 100% increase in productivity through AI-assisted development workflows</li>
+            <li>Build custom portals using JavaScript, HTML, and CSS in a fast-paced, client-facing environment, driving on-time go-lives</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-company">ManTech &middot; NASA Jet Propulsion Laboratory</h3>
+              <p class="exp-role">Senior ServiceNow Developer</p>
+            </div>
+            <span class="exp-dates">Jan 2024 &ndash; Apr 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Updated billing records for thousands of assets using transform maps, completing within one week</li>
+            <li>Integrated with the FedEx API for real-time asset shipping and tracking via scheduled jobs, script includes, and Flow Designer</li>
+            <li>Designed custom flows, subflows, and flow actions for efficient asset record management</li>
+            <li>Updated custom catalog items and widgets to deliver a streamlined user experience</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-company">Alliant Insurance Services</h3>
+              <p class="exp-role">Senior ServiceNow Developer</p>
+            </div>
+            <span class="exp-dates">May 2023 &ndash; Dec 2023</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Engineered client scripts, business rules, and script includes to automate processes across RITMs, INCs, Problems, and custom tables</li>
+            <li>Built IntegrationHub flows to automate Group Membership, create Zoom channels, and manage Active Directory groups</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-company">ServiceNow</h3>
+              <p class="exp-role">Senior Software Engineer</p>
+            </div>
+            <span class="exp-dates">Apr 2021 &ndash; May 2023</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Created Flow Designer flows and flow actions to configure and enhance virtual machines via REST APIs</li>
+            <li>Built Service Portal widgets for table queries, data display, and user-friendly CSV imports</li>
+            <li>Engineered custom applications that streamlined story creation and triaging across ServiceNow instances</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-company">Lincoln Financial Group</h3>
+              <p class="exp-role">ServiceNow Developer, Application Development</p>
+            </div>
+            <span class="exp-dates">Sep 2018 &ndash; Apr 2021</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led implementation of Agent Workspace, customizing it for seamless IT Service Desk integration</li>
+            <li>Developed client scripts, business rules, and script includes to automate critical processes via JavaScript and Glide APIs</li>
+            <li>Implemented ACLs and User Criteria securing tables, catalog items, record producers, and custom fields</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-company">Bridgepoint Education</h3>
+              <p class="exp-role">ServiceNow Developer</p>
+            </div>
+            <span class="exp-dates">Mar 2017 &ndash; Sep 2018</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Sole administrator for 3,500 users across five ServiceNow instances, managing daily access, INCs, RITMs, and CHGs</li>
+            <li>Designed and developed custom applications, catalog items, and workflows for multiple departments</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-label">Personal Projects</p>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img src="img/scripts.png" alt="Utility Scripts">
+          <div class="project-info">
+            <h3>Utility Scripts</h3>
+            <p>A collection of scripts for automating common developer workflows and repetitive tasks.</p>
+            <div class="project-tags">
+              <span>Bash</span>
+              <span>Shell Automation</span>
+            </div>
+            <a href="https://github.com/kylestengline/scripts" target="_blank" class="project-link">View on GitHub &rarr;</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="img/dogseekers.png" alt="Dog Seeker">
+          <div class="project-info">
+            <h3>Dog Seeker</h3>
+            <p>A web app for browsing adoptable dogs, mimicking Petfinder where you can search and filter by breed and location.</p>
+            <div class="project-tags">
+              <span>Ruby on Rails</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <a href="https://github.com/kylestengline/pet-finder-mock-up" target="_blank" class="project-link">View on GitHub &rarr;</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="img/inthemiddle.png" alt="In The Middle Blog">
+          <div class="project-info">
+            <h3>In The Middle</h3>
+            <p>A personal blog built from scratch, covering tech, travel, and everything in between.</p>
+            <div class="project-tags">
+              <span>Ruby on Rails</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <a href="https://github.com/kylestengline/my_blog" target="_blank" class="project-link">View on GitHub &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-inner contact-inner">
+      <p class="section-label">Let's Talk</p>
+      <p class="contact-sub">Open to Senior ServiceNow Developer and Architect opportunities. Reach out anytime.</p>
+      <div class="contact-links">
+        <a href="mailto:kyle.stengline@gmail.com" class="contact-btn">Email</a>
+        <a href="https://www.linkedin.com/in/kylestengline/" target="_blank" class="contact-btn">LinkedIn</a>
+        <a href="https://github.com/kylestengline/" target="_blank" class="contact-btn">GitHub</a>
+        <a href="KyleStengline.pdf" target="_blank" class="contact-btn contact-btn-accent">Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Kyle Stengline</p>
+  </footer>
+
+  <script src="javascripts/script.js"></script>
+</body>
 </html>
-<script type="text/javascript" src="javascripts/script.js"></script>
