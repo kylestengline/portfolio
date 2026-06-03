@@ -143,10 +143,24 @@
   });
 })();
 
-// ── NAV SECTION HIGHLIGHTING ─────────────────────────────────────
+// ── NAV SECTION HIGHLIGHTING & HAMBURGER ─────────────────────────
 document.addEventListener("DOMContentLoaded", function () {
   var sections = document.querySelectorAll("section[id]");
-  var navLinks = document.querySelectorAll("#nav ul a");
+  var navLinks = document.querySelectorAll("#nav-links a");
+  var hamburger = document.getElementById("hamburger");
+  var navMenu = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("open");
+    navMenu.classList.toggle("open");
+  });
+
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      hamburger.classList.remove("open");
+      navMenu.classList.remove("open");
+    });
+  });
 
   var observer = new IntersectionObserver(
     function (entries) {
