@@ -570,7 +570,6 @@ section {
 
 /* === CONTACT === */
 #contact {
- /* background: var(--surface); */
   background: var(--bg);
 }
 
@@ -629,6 +628,7 @@ footer {
   color: var(--text-muted);
   font-size: 0.82rem;
   border-top: 1px solid var(--border);
+  background: var(--surface);
 }
 
 /* === ANIMATIONS === */
