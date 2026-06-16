@@ -51,7 +51,13 @@
   // ── Overlay control ──
   function fadeOut() {
     overlay.style.opacity = "0";
-    setTimeout(function () { overlay.remove(); }, 600);
+    setTimeout(function () {
+      overlay.remove();
+      setTimeout(function () {
+        var nav = document.getElementById("nav");
+        if (nav) nav.classList.add("shine");
+      }, 1500);
+    }, 600);
   }
 
   function skip() {
@@ -160,6 +166,32 @@ document.addEventListener("DOMContentLoaded", function () {
       hamburger.classList.remove("open");
       navMenu.classList.remove("open");
     });
+  });
+
+  var backToTop = document.getElementById("back-to-top");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 400) {
+      backToTop.classList.add("visible");
+    } else {
+      backToTop.classList.remove("visible");
+    }
+  });
+  backToTop.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  var fadeObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll(".section-inner").forEach(function (el) {
+    el.classList.add("fade-target");
+    fadeObserver.observe(el);
   });
 
   var observer = new IntersectionObserver(

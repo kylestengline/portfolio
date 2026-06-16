@@ -71,7 +71,7 @@ ul {
 }
 
 #intro-line1 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--text-muted);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -84,12 +84,12 @@ ul {
   font-weight: 700;
   color: var(--text);
   letter-spacing: -0.02em;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.75rem;
   min-height: 1.2em;
 }
 
 #intro-line3 {
-  font-size: clamp(1rem, 3vw, 1.4rem);
+  font-size: clamp(1.5rem, 3vw, 1.7rem);
   font-weight: 400;
   color: var(--teal);
   min-height: 1.5em;
@@ -130,7 +130,41 @@ ul {
   background: rgba(11, 17, 32, 0.92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 2px solid var(--green);
+}
+
+#nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  pointer-events: none;
+  background-image:
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(255, 255, 255, 1)   0%,
+      rgba(200, 255, 200, 0.8) 30%,
+      rgba(48,  209, 88,  0.5) 58%,
+      transparent              80%
+    ),
+    linear-gradient(var(--green), var(--green));
+  background-size:
+    160px 8px,
+    100% 2px;
+  background-repeat: no-repeat;
+  background-position:
+    -160px bottom,
+    0 bottom;
+}
+
+#nav.shine::after {
+  animation: borderFlashlight 1.2s ease-in-out forwards;
+}
+
+@keyframes borderFlashlight {
+  from { background-position: -160px bottom, 0 bottom; }
+  to   { background-position: calc(100% + 160px) bottom, 0 bottom; }
 }
 
 .nav-logo {
@@ -186,12 +220,43 @@ ul {
   color: var(--text);
   font-size: 0.9rem;
   font-weight: 500;
+  position: relative;
   transition: color 0.2s;
+}
+
+#nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--green);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
 }
 
 #nav-links a:hover,
 #nav-links a.active {
   color: var(--green);
+}
+
+#nav-links a:hover::after,
+#nav-links a.active::after {
+  transform: scaleX(1);
+}
+
+/* === SCROLL FADE-IN === */
+.fade-target {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.fade-target.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* === SECTION SHARED === */
@@ -385,6 +450,13 @@ section {
   font-size: 0.88rem;
   color: var(--teal);
   font-weight: 500;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.skills-list li:hover {
+  background: rgba(48, 209, 88, 0.1);
+  border-color: var(--green);
+  color: #fff;
 }
 
 .certs-row {
@@ -629,6 +701,70 @@ footer {
   font-size: 0.82rem;
   border-top: 1px solid var(--border);
   background: var(--surface);
+}
+
+/* === BACK TO TOP === */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 200;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(11, 17, 32, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--green);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s;
+  pointer-events: none;
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#back-to-top:hover {
+  box-shadow: 0 0 14px rgba(48, 209, 88, 0.45);
+}
+
+#back-to-top::before {
+  content: "Back to top";
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(11, 17, 32, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.75rem;
+  font-family: var(--font);
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+#back-to-top:hover::before {
+  opacity: 1;
+}
+
+#back-to-top svg {
+  width: 28px;
+  height: 28px;
 }
 
 /* === ANIMATIONS === */
