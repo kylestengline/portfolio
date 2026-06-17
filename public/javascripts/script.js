@@ -53,10 +53,6 @@
     overlay.style.opacity = "0";
     setTimeout(function () {
       overlay.remove();
-      setTimeout(function () {
-        var nav = document.getElementById("nav");
-        if (nav) nav.classList.add("shine");
-      }, 1500);
     }, 600);
   }
 
