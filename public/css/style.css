@@ -175,11 +175,9 @@ ul {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-@media (min-width: 601px) {
-  #nav-links {
-    display: flex;
-    gap: 2rem;
-  }
+#nav-links {
+  display: flex;
+  gap: 2rem;
 }
 
 #nav-links a {
@@ -747,22 +745,6 @@ footer {
   z-index: 1;
 }
 
-@media (max-width: 600px) {
-  #back-to-top {
-    width: 46px;
-    height: 46px;
-    bottom: 1.25rem;
-    right: 1.25rem;
-  }
-  #back-to-top svg {
-    width: 27px;
-    height: 27px;
-  }
-  .compass-n {
-    font-size: 9px;
-  }
-}
-
 /* === ANIMATIONS === */
 @keyframes fadeUp {
   from {
@@ -775,97 +757,3 @@ footer {
   }
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 900px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .about-photo {
-    max-width: 240px;
-    margin: 0 auto;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-    max-width: 480px;
-    margin: 0 auto;
-  }
-
-  .skills-groups {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .exp-header {
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-}
-
-@media (max-width: 600px) {
-  section {
-    padding: 5rem 1.25rem;
-  }
-
-  #nav {
-    padding: 0.875rem 1.25rem;
-    position: fixed;
-  }
-
-  .logo-full {
-    display: none;
-  }
-
-  .logo-short {
-    display: inline;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  #nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    gap: 0;
-    background: rgba(11, 17, 32, 0.97);
-    border-bottom: 2px solid var(--green);
-    padding: 0.5rem 0;
-  }
-
-  #nav-links.open {
-    display: flex;
-  }
-
-  #nav-links li a {
-    display: block;
-    padding: 0.85rem 1.5rem;
-    font-size: 0.95rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  #nav-links li:last-child a {
-    border-bottom: none;
-  }
-
-  .hero-cta {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-btn {
-    width: 200px;
-    text-align: center;
-  }
-}

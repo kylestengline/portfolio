@@ -1,117 +1,115 @@
-/*iPhone 6*/
-@media only screen and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2) {
+/* === TABLET (≤900px) === */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
-  .welcome_to, html {
-    height: 1450px;
+  .about-photo {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .skills-groups {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+/* === MOBILE (≤600px) === */
+@media (max-width: 600px) {
+  section {
+    padding: 5rem 1.25rem;
+  }
+
+  #intro-line3 {
+    font-size: 1.15rem;
+  }
+
+  #nav {
+    padding: 0.875rem 1.25rem;
+    position: fixed;
+  }
+
+  .logo-full {
+    display: none;
+  }
+
+  .logo-short {
+    display: inline;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(11, 17, 32, 0.97);
+    border-bottom: 2px solid var(--green);
+    padding: 0.5rem 0;
+  }
+
+  #nav-links.open {
+    display: flex;
+  }
+
+  #nav-links li a {
+    display: block;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  #nav-links li:last-child a {
+    border-bottom: none;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-btn {
+    width: 200px;
     text-align: center;
   }
 
-  div.welcome_to {
-    margin-top: 150px;
+  #back-to-top {
+    width: 46px;
+    height: 46px;
+    bottom: 1.25rem;
+    right: 1.25rem;
   }
 
-  h2#hi, h2#kyle, h2#bid_welcome, h2#developer {
-    font-size: 65px;
-    margin-top: 100px;
-    text-decoration: none;
+  #back-to-top svg {
+    width: 27px;
+    height: 27px;
   }
 
-  h4.skills {
-    font-size: 45px;
-    line-height: 2em;
-    position: absolute;
-    left: 33.7%;
-    margin-top: -100px;
-  }
-
-  img#scripts, #dogseekers, #themiddle {
-    border-radius: 1%;
-    border: none;
-    height: 100%;
-    width: 100%;
-    margin-bottom: 10%;
-  }
-
-	.container {
-		overflow: hidden;
-	}
-
-	div#about {
-		padding-right: 20px;
-  	padding-left: 20px;
-    margin-bottom: 50px;
-	}
-
-	h1.name {
-		margin-top: 10px;
-		font-size: 60px;
-	}
-
-	h3 {
-		font-size: 38px;
-		line-height: 1.2em;
-	}
-
-	h4 {
-		font-size: 35px;
-		padding: 10px;
-	}
-
-	h4.projects {
-   margin-bottom: -20px;
-	 margin-top: 300px;
-	 font-size: 45px;
-	}
-
-	img {
-		max-width: 100%;
-	}
-
-	img#contact_back {
-		border-radius: 0%;
-		max-width: 100%;
-		border: 2px solid black;
-		margin-top: 600px;
-		margin-bottom: 200px;
-		margin-right: 135px;
-		margin-left: 140px;
-	}
-
-	p {
-		font-size: 35px;
-		font-weight: 100;
-		line-height: 1.2em;
-    padding: 20px;
-	}
-
-	.email, .github, .linkedin, 
-  .resume, #my_projects {
-    padding-right: 25px;
-    padding-left: 25px;
-    line-height: 1.8em;
-    font-size: 38px;
-  }
-
-  .show {
-    margin-top: 15%;
-    width: 375px;
-  }
-  
-  h4.project-heading {
-    font-size: 38px;
-  }
-
-	a.project, .the_code {
-		font-size: 35px;
-	}
-
-  .wrapping:hover .hover-text {
-    opacity: 0;
-  }
-
-  .projects-and-contact {
-    margin-top: -75px;
+  .compass-n {
+    font-size: 9px;
   }
 }
