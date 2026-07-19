@@ -92,9 +92,16 @@
     align-items: center;
   }
 
+  .contact-sub {
+    font-size: 0.88rem;
+  }
+
   .contact-btn {
-    width: 200px;
+    width: 220px;
     text-align: center;
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.45);
   }
 
   #back-to-top {
