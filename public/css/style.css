@@ -441,6 +441,15 @@ section {
   padding: 0.4rem 1rem;
 }
 
+.cert-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cert-link:hover {
+  color: var(--green);
+}
+
 /* === EXPERIENCE === */
 #experience {
   background: var(--surface);

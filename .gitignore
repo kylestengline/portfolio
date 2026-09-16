@@ -1,3 +1,11 @@
 .firebase
 .env
 firebase-debug.log
+.DS_Store
+
+# Certification files (kept local only)
+public/certifications/
+
+# Resume (kept local only)
+public/KyleStengline.pdf
+
