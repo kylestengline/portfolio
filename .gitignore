@@ -3,6 +3,8 @@
 firebase-debug.log
 .DS_Store
 node_modules/
+CLAUDE.md
+.claude/
 package.json
 package-lock.json
 .prettierrc
