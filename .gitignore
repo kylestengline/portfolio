@@ -2,6 +2,7 @@
 .env
 firebase-debug.log
 .DS_Store
+node_modules/
 
 # Certification files (kept local only)
 public/certifications/

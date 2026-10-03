@@ -1,25 +1,27 @@
 /* === DESIGN TOKENS === */
 :root {
-  --bg:          #0B1120;
-  --surface:     #141E30;
-  --surface-2:   #1A2640;
-  --border:      rgba(255, 255, 255, 0.09);
+  --bg: #0b1120;
+  --surface: #141e30;
+  --surface-2: #1a2640;
+  --border: rgba(255, 255, 255, 0.09);
 
-  --green:       #30D158;
-  --teal:        #5AC8FA;
-  --blue:        #0A84FF;
-  --yellow:      #FFD60A;
+  --green: #30d158;
+  --teal: #5ac8fa;
+  --blue: #0a84ff;
+  --yellow: #ffd60a;
 
-  --text:        #F2F2F7;
-  --text-muted:  #8E8E93;
+  --text: #f2f2f7;
+  --text-muted: #8e8e93;
 
-  --font:        system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --radius:      12px;
-  --max-width:   1100px;
+  --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --radius: 12px;
+  --max-width: 1100px;
 }
 
 /* === RESET === */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -96,15 +98,20 @@ ul {
 }
 
 .typing::after {
-  content: "|";
+  content: '|';
   color: var(--green);
   margin-left: 2px;
   animation: blink 0.65s step-end infinite;
 }
 
 @keyframes blink {
-  from, to { opacity: 1; }
-  50%       { opacity: 0; }
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .intro-skip {
@@ -160,7 +167,9 @@ ul {
   height: 2px;
   background: var(--text);
   border-radius: 2px;
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .hamburger.open span:nth-child(1) {
@@ -189,7 +198,7 @@ ul {
 }
 
 #nav-links a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -215,7 +224,9 @@ ul {
 .fade-target {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
 }
 
 .fade-target.visible {
@@ -250,7 +261,11 @@ section {
   justify-content: center;
   text-align: center;
   padding: 8rem 2rem 4rem;
-  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(48, 209, 88, 0.14) 0%, transparent 70%);
+  background: radial-gradient(
+    ellipse 80% 50% at 50% -10%,
+    rgba(48, 209, 88, 0.14) 0%,
+    transparent 70%
+  );
 }
 
 .hero-content {
@@ -324,7 +339,9 @@ section {
   border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 600;
-  transition: opacity 0.2s, transform 0.15s;
+  transition:
+    opacity 0.2s,
+    transform 0.15s;
   cursor: pointer;
 }
 
@@ -414,7 +431,10 @@ section {
   font-size: 0.88rem;
   color: var(--teal);
   font-weight: 500;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
 }
 
 .skills-list li:hover {
@@ -468,7 +488,7 @@ section {
 }
 
 .exp-item::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -5px;
   top: 7px;
@@ -524,7 +544,7 @@ section {
 }
 
 .exp-bullets li::before {
-  content: "–";
+  content: '–';
   position: absolute;
   left: 0;
   color: var(--green);
@@ -548,7 +568,9 @@ section {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: border-color 0.25s, transform 0.25s;
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
 }
 
 .project-card:hover {
@@ -653,7 +675,9 @@ section {
   color: var(--text);
   font-size: 0.95rem;
   font-weight: 500;
-  transition: border-color 0.2s, color 0.2s;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
 }
 
 .contact-btn:hover {
@@ -704,7 +728,10 @@ footer {
   justify-content: center;
   opacity: 0;
   transform: translateY(12px);
-  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.2s;
   pointer-events: none;
 }
 
@@ -719,7 +746,7 @@ footer {
 }
 
 #back-to-top::before {
-  content: "Back to top";
+  content: 'Back to top';
   position: absolute;
   right: calc(100% + 10px);
   top: 50%;
@@ -773,4 +800,3 @@ footer {
     transform: translateY(0);
   }
 }
-

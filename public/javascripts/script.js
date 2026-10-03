@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 
 // ── INTRO ANIMATION ──────────────────────────────────────────────
 (function () {
-  var overlay = document.getElementById("intro-overlay");
+  var overlay = document.getElementById('intro-overlay');
   if (!overlay) return;
 
-  var el1 = document.getElementById("intro-line1");
-  var el2 = document.getElementById("intro-line2");
-  var el3 = document.getElementById("intro-line3");
+  var el1 = document.getElementById('intro-line1');
+  var el2 = document.getElementById('intro-line2');
+  var el3 = document.getElementById('intro-line3');
   var cancelled = false;
 
   // ── Audio ──
@@ -22,22 +22,19 @@
 
   function unlockAudio() {
     initAudio();
-    if (audioCtx && audioCtx.state === "suspended") {
+    if (audioCtx && audioCtx.state === 'suspended') {
       audioCtx.resume();
     }
   }
 
   function playKey(isBackspace) {
-    if (!audioCtx || audioCtx.state !== "running") return;
+    if (!audioCtx || audioCtx.state !== 'running') return;
     var t = audioCtx.currentTime;
     var osc = audioCtx.createOscillator();
     var gain = audioCtx.createGain();
 
-    osc.type = "sawtooth";
-    osc.frequency.setValueAtTime(
-      isBackspace ? 260 : 380 + Math.random() * 140,
-      t
-    );
+    osc.type = 'sawtooth';
+    osc.frequency.setValueAtTime(isBackspace ? 260 : 380 + Math.random() * 140, t);
     osc.frequency.exponentialRampToValueAtTime(55, t + 0.028);
     gain.gain.setValueAtTime(isBackspace ? 0.14 : 0.18, t);
     gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.032);
@@ -50,7 +47,7 @@
 
   // ── Overlay control ──
   function fadeOut() {
-    overlay.style.opacity = "0";
+    overlay.style.opacity = '0';
     setTimeout(function () {
       overlay.remove();
     }, 600);
@@ -63,16 +60,18 @@
     fadeOut();
   }
 
-  overlay.addEventListener("click", skip);
-  document.addEventListener("keydown", skip);
+  overlay.addEventListener('click', skip);
+  document.addEventListener('keydown', skip);
 
   // ── Helpers ──
   function delay(ms, cb) {
-    setTimeout(function () { if (!cancelled) cb(); }, ms);
+    setTimeout(function () {
+      if (!cancelled) cb();
+    }, ms);
   }
 
   function typeText(el, text, speed, cb) {
-    el.classList.add("typing");
+    el.classList.add('typing');
     var i = 0;
     function tick() {
       if (cancelled) return;
@@ -81,7 +80,7 @@
         playKey(false);
         setTimeout(tick, speed + Math.round(Math.random() * 18));
       } else {
-        el.classList.remove("typing");
+        el.classList.remove('typing');
         cb();
       }
     }
@@ -89,7 +88,7 @@
   }
 
   function typeBurst(el, text, speed, cb) {
-    el.classList.add("typing");
+    el.classList.add('typing');
     var i = 0;
     function tick() {
       if (cancelled) return;
@@ -98,7 +97,7 @@
         playKey(false);
         setTimeout(tick, speed);
       } else {
-        el.classList.remove("typing");
+        el.classList.remove('typing');
         cb();
       }
     }
@@ -106,7 +105,7 @@
   }
 
   function deleteChars(el, count, speed, cb) {
-    el.classList.add("typing");
+    el.classList.add('typing');
     var i = 0;
     function tick() {
       if (cancelled) return;
@@ -116,7 +115,7 @@
         playKey(true);
         setTimeout(tick, speed);
       } else {
-        el.classList.remove("typing");
+        el.classList.remove('typing');
         cb();
       }
     }
@@ -125,14 +124,14 @@
 
   // ── Sequence ──
   delay(300, function () {
-    typeText(el1, "Hello and Welcome", 42, function () {
+    typeText(el1, 'Hello and Welcome', 42, function () {
       delay(380, function () {
         typeText(el2, "I'm Kyle", 55, function () {
           delay(320, function () {
-            typeText(el3, "A Senior ServiceNow Develoer", 38, function () {
+            typeText(el3, 'A Senior ServiceNow Develoer', 38, function () {
               delay(420, function () {
                 deleteChars(el3, 2, 80, function () {
-                  typeText(el3, "per.", 52, function () {
+                  typeText(el3, 'per.', 52, function () {
                     delay(850, fadeOut);
                   });
                 });
@@ -146,47 +145,50 @@
 })();
 
 // ── NAV SECTION HIGHLIGHTING & HAMBURGER ─────────────────────────
-document.addEventListener("DOMContentLoaded", function () {
-  var sections = document.querySelectorAll("section[id]");
-  var navLinks = document.querySelectorAll("#nav-links a");
-  var hamburger = document.getElementById("hamburger");
-  var navMenu = document.getElementById("nav-links");
+document.addEventListener('DOMContentLoaded', function () {
+  var sections = document.querySelectorAll('section[id]');
+  var navLinks = document.querySelectorAll('#nav-links a');
+  var hamburger = document.getElementById('hamburger');
+  var navMenu = document.getElementById('nav-links');
 
-  hamburger.addEventListener("click", function () {
-    hamburger.classList.toggle("open");
-    navMenu.classList.toggle("open");
+  hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open');
   });
 
   navLinks.forEach(function (link) {
-    link.addEventListener("click", function () {
-      hamburger.classList.remove("open");
-      navMenu.classList.remove("open");
+    link.addEventListener('click', function () {
+      hamburger.classList.remove('open');
+      navMenu.classList.remove('open');
     });
   });
 
-  var backToTop = document.getElementById("back-to-top");
-  window.addEventListener("scroll", function () {
+  var backToTop = document.getElementById('back-to-top');
+  window.addEventListener('scroll', function () {
     if (window.scrollY > 400) {
-      backToTop.classList.add("visible");
+      backToTop.classList.add('visible');
     } else {
-      backToTop.classList.remove("visible");
+      backToTop.classList.remove('visible');
     }
   });
-  backToTop.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  backToTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  var fadeObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        fadeObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
+  var fadeObserver = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
 
-  document.querySelectorAll(".section-inner").forEach(function (el) {
-    el.classList.add("fade-target");
+  document.querySelectorAll('.section-inner').forEach(function (el) {
+    el.classList.add('fade-target');
     fadeObserver.observe(el);
   });
 
@@ -195,15 +197,15 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           navLinks.forEach(function (link) {
-            link.classList.remove("active");
-            if (link.getAttribute("href") === "#" + entry.target.id) {
-              link.classList.add("active");
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + entry.target.id) {
+              link.classList.add('active');
             }
           });
         }
       });
     },
-    { rootMargin: "-40% 0px -40% 0px" }
+    { rootMargin: '-40% 0px -40% 0px' }
   );
 
   sections.forEach(function (section) {
