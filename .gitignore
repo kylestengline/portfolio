@@ -3,6 +3,10 @@
 firebase-debug.log
 .DS_Store
 node_modules/
+package.json
+package-lock.json
+.prettierrc
+.prettierignore
 
 # Certification files (kept local only)
 public/certifications/
