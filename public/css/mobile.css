@@ -34,7 +34,8 @@
   }
 
   #hero {
-    padding: 3rem 1.25rem 3rem;
+    min-height: 100svh;
+    padding: 5rem 1.25rem 3rem;
   }
 
   #intro-line3 {
