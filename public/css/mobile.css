@@ -33,6 +33,10 @@
     padding: 5rem 1.25rem;
   }
 
+  #hero {
+    padding: 5rem 1.25rem 3rem;
+  }
+
   #intro-line3 {
     font-size: 1.15rem;
   }
