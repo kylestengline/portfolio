@@ -304,7 +304,11 @@ section {
   margin-bottom: 1.25rem;
 }
 
-.hero-certs span {
+.cert-break {
+  display: none;
+}
+
+.hero-certs span:not(.cert-break) {
   background: rgba(255, 214, 10, 0.1);
   border: 1px solid rgba(255, 214, 10, 0.3);
   color: var(--yellow);
