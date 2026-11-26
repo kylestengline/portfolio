@@ -131,6 +131,10 @@
     right: 1.25rem;
   }
 
+  #back-to-top::before {
+    display: none;
+  }
+
   #back-to-top svg {
     width: 27px;
     height: 27px;
